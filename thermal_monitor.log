@@ -1,0 +1,4516 @@
+2024-12-17 19:31:30,608 [INFO] 
+
+Temperature Report (2024-12-17 19:31:30)
+-----------------------------------------------
+Current Temperature: 20.4°C (68.7°F)
+Analog Reading: 481
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.35V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:31:35,117 [INFO] 
+
+Temperature Report (2024-12-17 19:31:35)
+-----------------------------------------------
+Current Temperature: 20.5°C (69.0°F)
+Analog Reading: 483
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.36V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:31:40,128 [INFO] 
+
+Temperature Report (2024-12-17 19:31:40)
+-----------------------------------------------
+Current Temperature: 20.8°C (69.4°F)
+Analog Reading: 486
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.38V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:31:45,168 [INFO] 
+
+Temperature Report (2024-12-17 19:31:45)
+-----------------------------------------------
+Current Temperature: 20.7°C (69.2°F)
+Analog Reading: 485
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.37V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:31:50,151 [INFO] 
+
+Temperature Report (2024-12-17 19:31:50)
+-----------------------------------------------
+Current Temperature: 20.8°C (69.4°F)
+Analog Reading: 486
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.38V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:31:55,160 [INFO] 
+
+Temperature Report (2024-12-17 19:31:55)
+-----------------------------------------------
+Current Temperature: 20.9°C (69.7°F)
+Analog Reading: 488
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.39V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:32:00,102 [INFO] 
+
+Temperature Report (2024-12-17 19:32:00)
+-----------------------------------------------
+Current Temperature: 20.7°C (69.2°F)
+Analog Reading: 485
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.37V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:32:05,117 [INFO] 
+
+Temperature Report (2024-12-17 19:32:05)
+-----------------------------------------------
+Current Temperature: 20.6°C (69.1°F)
+Analog Reading: 484
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.37V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:32:10,129 [INFO] 
+
+Temperature Report (2024-12-17 19:32:10)
+-----------------------------------------------
+Current Temperature: 20.5°C (69.0°F)
+Analog Reading: 483
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.36V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:32:15,141 [INFO] 
+
+Temperature Report (2024-12-17 19:32:15)
+-----------------------------------------------
+Current Temperature: 20.6°C (69.1°F)
+Analog Reading: 484
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.37V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:32:20,154 [INFO] 
+
+Temperature Report (2024-12-17 19:32:20)
+-----------------------------------------------
+Current Temperature: 20.8°C (69.4°F)
+Analog Reading: 486
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.38V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:32:25,166 [INFO] 
+
+Temperature Report (2024-12-17 19:32:25)
+-----------------------------------------------
+Current Temperature: 20.9°C (69.5°F)
+Analog Reading: 487
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.38V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:32:30,175 [INFO] 
+
+Temperature Report (2024-12-17 19:32:30)
+-----------------------------------------------
+Current Temperature: 20.7°C (69.2°F)
+Analog Reading: 485
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.37V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:32:35,184 [INFO] 
+
+Temperature Report (2024-12-17 19:32:35)
+-----------------------------------------------
+Current Temperature: 20.9°C (69.5°F)
+Analog Reading: 487
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.38V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:32:40,193 [INFO] 
+
+Temperature Report (2024-12-17 19:32:40)
+-----------------------------------------------
+Current Temperature: 20.8°C (69.4°F)
+Analog Reading: 486
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.38V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:32:45,199 [INFO] 
+
+Temperature Report (2024-12-17 19:32:45)
+-----------------------------------------------
+Current Temperature: 20.5°C (69.0°F)
+Analog Reading: 483
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.36V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:32:50,206 [INFO] 
+
+Temperature Report (2024-12-17 19:32:50)
+-----------------------------------------------
+Current Temperature: 20.4°C (68.7°F)
+Analog Reading: 481
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.35V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:32:55,215 [INFO] 
+
+Temperature Report (2024-12-17 19:32:55)
+-----------------------------------------------
+Current Temperature: 20.4°C (68.8°F)
+Analog Reading: 482
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.36V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:33:00,227 [INFO] 
+
+Temperature Report (2024-12-17 19:33:00)
+-----------------------------------------------
+Current Temperature: 20.3°C (68.5°F)
+Analog Reading: 480
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.35V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:33:05,239 [INFO] 
+
+Temperature Report (2024-12-17 19:33:05)
+-----------------------------------------------
+Current Temperature: 20.5°C (69.0°F)
+Analog Reading: 483
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.36V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:33:10,251 [INFO] 
+
+Temperature Report (2024-12-17 19:33:10)
+-----------------------------------------------
+Current Temperature: 20.5°C (69.0°F)
+Analog Reading: 483
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.36V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:33:15,192 [INFO] 
+
+Temperature Report (2024-12-17 19:33:15)
+-----------------------------------------------
+Current Temperature: 20.2°C (68.4°F)
+Analog Reading: 479
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.34V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:33:20,203 [WARNING] Temperature alert: warning_low - Temperature: 19.9°C (67.8°F)
+2024-12-17 19:33:20,205 [INFO] 
+
+Temperature Report (2024-12-17 19:33:20)
+-----------------------------------------------
+Current Temperature: 19.9°C (67.8°F)
+Analog Reading: 475
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.32V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:33:25,210 [INFO] 
+
+Temperature Report (2024-12-17 19:33:25)
+-----------------------------------------------
+Current Temperature: 20.2°C (68.4°F)
+Analog Reading: 479
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.34V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:33:30,218 [INFO] 
+
+Temperature Report (2024-12-17 19:33:30)
+-----------------------------------------------
+Current Temperature: 20.4°C (68.8°F)
+Analog Reading: 482
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.36V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:33:35,228 [INFO] 
+
+Temperature Report (2024-12-17 19:33:35)
+-----------------------------------------------
+Current Temperature: 20.6°C (69.1°F)
+Analog Reading: 484
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.37V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:33:45,221 [INFO] 
+
+Temperature Report (2024-12-17 19:33:45)
+-----------------------------------------------
+Current Temperature: 20.8°C (69.4°F)
+Analog Reading: 486
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.38V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:33:49,632 [INFO] 
+
+Temperature Report (2024-12-17 19:33:49)
+-----------------------------------------------
+Current Temperature: 20.8°C (69.4°F)
+Analog Reading: 486
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.38V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:33:54,645 [INFO] 
+
+Temperature Report (2024-12-17 19:33:54)
+-----------------------------------------------
+Current Temperature: 20.8°C (69.4°F)
+Analog Reading: 486
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.38V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:33:59,656 [INFO] 
+
+Temperature Report (2024-12-17 19:33:59)
+-----------------------------------------------
+Current Temperature: 20.7°C (69.2°F)
+Analog Reading: 485
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.37V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:34:04,601 [INFO] 
+
+Temperature Report (2024-12-17 19:34:04)
+-----------------------------------------------
+Current Temperature: 20.5°C (69.0°F)
+Analog Reading: 483
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.36V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:34:09,609 [INFO] 
+
+Temperature Report (2024-12-17 19:34:09)
+-----------------------------------------------
+Current Temperature: 20.2°C (68.4°F)
+Analog Reading: 479
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.34V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:34:14,620 [INFO] 
+
+Temperature Report (2024-12-17 19:34:14)
+-----------------------------------------------
+Current Temperature: 20.6°C (69.1°F)
+Analog Reading: 484
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.37V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:34:19,631 [INFO] 
+
+Temperature Report (2024-12-17 19:34:19)
+-----------------------------------------------
+Current Temperature: 20.5°C (69.0°F)
+Analog Reading: 483
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.36V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:34:24,645 [INFO] 
+
+Temperature Report (2024-12-17 19:34:24)
+-----------------------------------------------
+Current Temperature: 20.4°C (68.7°F)
+Analog Reading: 481
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.35V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:34:29,658 [INFO] 
+
+Temperature Report (2024-12-17 19:34:29)
+-----------------------------------------------
+Current Temperature: 20.3°C (68.5°F)
+Analog Reading: 480
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.35V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:34:34,673 [INFO] 
+
+Temperature Report (2024-12-17 19:34:34)
+-----------------------------------------------
+Current Temperature: 20.4°C (68.8°F)
+Analog Reading: 482
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.36V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:34:39,689 [INFO] 
+
+Temperature Report (2024-12-17 19:34:39)
+-----------------------------------------------
+Current Temperature: 20.4°C (68.8°F)
+Analog Reading: 482
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.36V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:34:44,703 [INFO] 
+
+Temperature Report (2024-12-17 19:34:44)
+-----------------------------------------------
+Current Temperature: 20.3°C (68.5°F)
+Analog Reading: 480
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.35V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:34:49,714 [WARNING] Temperature alert: warning_low - Temperature: 20.0°C (67.9°F)
+2024-12-17 19:34:49,716 [INFO] 
+
+Temperature Report (2024-12-17 19:34:49)
+-----------------------------------------------
+Current Temperature: 20.0°C (67.9°F)
+Analog Reading: 476
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.33V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:34:54,658 [WARNING] Temperature alert: warning_low - Temperature: 20.0°C (67.9°F)
+2024-12-17 19:34:54,658 [INFO] 
+
+Temperature Report (2024-12-17 19:34:54)
+-----------------------------------------------
+Current Temperature: 20.0°C (67.9°F)
+Analog Reading: 476
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.33V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:34:59,673 [WARNING] Temperature alert: warning_low - Temperature: 19.8°C (67.6°F)
+2024-12-17 19:34:59,675 [INFO] 
+
+Temperature Report (2024-12-17 19:34:59)
+-----------------------------------------------
+Current Temperature: 19.8°C (67.6°F)
+Analog Reading: 474
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.32V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:35:04,684 [WARNING] Temperature alert: warning_low - Temperature: 19.9°C (67.8°F)
+2024-12-17 19:35:04,685 [INFO] 
+
+Temperature Report (2024-12-17 19:35:04)
+-----------------------------------------------
+Current Temperature: 19.9°C (67.8°F)
+Analog Reading: 475
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.32V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:35:09,699 [WARNING] Temperature alert: warning_low - Temperature: 19.9°C (67.8°F)
+2024-12-17 19:35:09,700 [INFO] 
+
+Temperature Report (2024-12-17 19:35:09)
+-----------------------------------------------
+Current Temperature: 19.9°C (67.8°F)
+Analog Reading: 475
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.32V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:35:14,712 [WARNING] Temperature alert: warning_high - Temperature: 27.8°C (82.0°F)
+2024-12-17 19:35:14,713 [INFO] 
+
+Temperature Report (2024-12-17 19:35:14)
+-----------------------------------------------
+Current Temperature: 27.8°C (82.0°F)
+Analog Reading: 572
+System Status: warning_high
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching upper limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.80V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:35:19,724 [WARNING] Temperature alert: warning_high - Temperature: 28.7°C (83.6°F)
+2024-12-17 19:35:19,726 [INFO] 
+
+Temperature Report (2024-12-17 19:35:19)
+-----------------------------------------------
+Current Temperature: 28.7°C (83.6°F)
+Analog Reading: 583
+System Status: warning_high
+Temperature Trend: rising
+
+Analysis:
+Temperature is approaching upper limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+4. Investigate heat sources
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.85V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:35:19,726 [ERROR] Error generating report: unsupported operand type(s) for -: 'dict' and 'dict'
+2024-12-17 19:35:24,742 [WARNING] Temperature alert: warning_high - Temperature: 28.9°C (84.1°F)
+2024-12-17 19:35:24,743 [INFO] 
+
+Temperature Report (2024-12-17 19:35:24)
+-----------------------------------------------
+Current Temperature: 28.9°C (84.1°F)
+Analog Reading: 586
+System Status: warning_high
+Temperature Trend: rising
+
+Analysis:
+Temperature is approaching upper limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+4. Investigate heat sources
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.86V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:35:29,753 [WARNING] Temperature alert: warning_high - Temperature: 27.1°C (80.7°F)
+2024-12-17 19:35:29,754 [INFO] 
+
+Temperature Report (2024-12-17 19:35:29)
+-----------------------------------------------
+Current Temperature: 27.1°C (80.7°F)
+Analog Reading: 563
+System Status: warning_high
+Temperature Trend: rising
+
+Analysis:
+Temperature is approaching upper limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+4. Investigate heat sources
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.75V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:35:34,764 [INFO] 
+
+Temperature Report (2024-12-17 19:35:34)
+-----------------------------------------------
+Current Temperature: 23.7°C (74.7°F)
+Analog Reading: 522
+System Status: normal
+Temperature Trend: rising
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.55V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:35:39,709 [INFO] 
+
+Temperature Report (2024-12-17 19:35:39)
+-----------------------------------------------
+Current Temperature: 21.9°C (71.5°F)
+Analog Reading: 500
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.44V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:35:44,717 [INFO] 
+
+Temperature Report (2024-12-17 19:35:44)
+-----------------------------------------------
+Current Temperature: 20.8°C (69.4°F)
+Analog Reading: 486
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.38V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:35:49,729 [INFO] 
+
+Temperature Report (2024-12-17 19:35:49)
+-----------------------------------------------
+Current Temperature: 20.2°C (68.4°F)
+Analog Reading: 479
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.34V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:35:54,737 [WARNING] Temperature alert: warning_low - Temperature: 19.5°C (67.0°F)
+2024-12-17 19:35:54,737 [INFO] 
+
+Temperature Report (2024-12-17 19:35:54)
+-----------------------------------------------
+Current Temperature: 19.5°C (67.0°F)
+Analog Reading: 470
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.30V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:35:59,745 [WARNING] Temperature alert: warning_low - Temperature: 19.1°C (66.5°F)
+2024-12-17 19:35:59,746 [INFO] 
+
+Temperature Report (2024-12-17 19:35:59)
+-----------------------------------------------
+Current Temperature: 19.1°C (66.5°F)
+Analog Reading: 466
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.28V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:36:04,755 [WARNING] Temperature alert: warning_low - Temperature: 19.0°C (66.2°F)
+2024-12-17 19:36:04,757 [INFO] 
+
+Temperature Report (2024-12-17 19:36:04)
+-----------------------------------------------
+Current Temperature: 19.0°C (66.2°F)
+Analog Reading: 464
+System Status: warning_low
+Temperature Trend: falling
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+4. Check insulation
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.27V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:36:09,767 [WARNING] Temperature alert: warning_low - Temperature: 19.0°C (66.2°F)
+2024-12-17 19:36:09,767 [INFO] 
+
+Temperature Report (2024-12-17 19:36:09)
+-----------------------------------------------
+Current Temperature: 19.0°C (66.2°F)
+Analog Reading: 464
+System Status: warning_low
+Temperature Trend: falling
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+4. Check insulation
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.27V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:36:14,775 [WARNING] Temperature alert: warning_low - Temperature: 18.9°C (66.0°F)
+2024-12-17 19:36:14,776 [INFO] 
+
+Temperature Report (2024-12-17 19:36:14)
+-----------------------------------------------
+Current Temperature: 18.9°C (66.0°F)
+Analog Reading: 463
+System Status: warning_low
+Temperature Trend: falling
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+4. Check insulation
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.26V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:36:19,783 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.6°F)
+2024-12-17 19:36:19,784 [INFO] 
+
+Temperature Report (2024-12-17 19:36:19)
+-----------------------------------------------
+Current Temperature: 18.7°C (65.6°F)
+Analog Reading: 460
+System Status: warning_low
+Temperature Trend: falling
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+4. Check insulation
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.25V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:36:24,793 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.6°F)
+2024-12-17 19:36:24,795 [INFO] 
+
+Temperature Report (2024-12-17 19:36:24)
+-----------------------------------------------
+Current Temperature: 18.7°C (65.6°F)
+Analog Reading: 460
+System Status: warning_low
+Temperature Trend: falling
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+4. Check insulation
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.25V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:36:35,289 [WARNING] Temperature alert: warning_low - Temperature: 18.9°C (66.0°F)
+2024-12-17 19:36:35,290 [INFO] 
+
+Temperature Report (2024-12-17 19:36:35)
+-----------------------------------------------
+Current Temperature: 18.9°C (66.0°F)
+Analog Reading: 463
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.26V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:36:39,803 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.7°F)
+2024-12-17 19:36:39,804 [INFO] 
+
+Temperature Report (2024-12-17 19:36:39)
+-----------------------------------------------
+Current Temperature: 18.7°C (65.7°F)
+Analog Reading: 461
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.25V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:36:44,816 [WARNING] Temperature alert: warning_low - Temperature: 18.6°C (65.4°F)
+2024-12-17 19:36:44,818 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:36:49,764 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:36:49,766 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:36:54,776 [WARNING] Temperature alert: warning_low - Temperature: 18.4°C (65.1°F)
+2024-12-17 19:36:54,777 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:36:59,789 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:36:59,790 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:37:04,799 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.6°F)
+2024-12-17 19:37:04,800 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:37:09,809 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.7°F)
+2024-12-17 19:37:09,810 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:37:14,819 [WARNING] Temperature alert: warning_low - Temperature: 18.6°C (65.4°F)
+2024-12-17 19:37:14,819 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:37:19,828 [WARNING] Temperature alert: warning_low - Temperature: 18.4°C (65.1°F)
+2024-12-17 19:37:19,829 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:37:24,838 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:37:24,840 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:37:29,846 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.6°F)
+2024-12-17 19:37:29,846 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:37:34,855 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.6°F)
+2024-12-17 19:37:34,856 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:37:39,864 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.7°F)
+2024-12-17 19:37:39,865 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:37:44,877 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.7°F)
+2024-12-17 19:37:44,878 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:37:49,890 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.6°F)
+2024-12-17 19:37:49,892 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:37:54,838 [WARNING] Temperature alert: warning_low - Temperature: 18.4°C (65.1°F)
+2024-12-17 19:37:54,838 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:37:59,848 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:37:59,848 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:38:04,856 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.7°F)
+2024-12-17 19:38:04,858 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:38:09,864 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.7°F)
+2024-12-17 19:38:09,864 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:38:09,893 [INFO] 
+
+==================================================
+THERMAL SYSTEM ANALYSIS REPORT
+==================================================
+Time: 2024-12-17 19:38:09
+Number of Readings: 20
+
+Temperature Statistics:
+---------------------
+Current: 18.7°C
+Minimum: 18.4°C
+Maximum: 18.9°C
+Average: 18.6°C
+
+Control Limits:
+-------------
+UCL: 23.5°C (519 analog)
+LCL: 21.5°C (495 analog)
+
+System Status:
+------------
+Current Status: Temperature approaching low limit
+Temperature Trend: stable
+
+Recommendations:
+--------------
+1. 
+
+==================================================
+
+2024-12-17 19:38:14,904 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.7°F)
+2024-12-17 19:38:14,905 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:38:22,399 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.7°F)
+2024-12-17 19:38:22,401 [INFO] 
+
+Temperature Report (2024-12-17 19:38:22)
+-----------------------------------------------
+Current Temperature: 18.7°C (65.7°F)
+Analog Reading: 461
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.25V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:38:26,810 [WARNING] Temperature alert: warning_low - Temperature: 18.8°C (65.9°F)
+2024-12-17 19:38:26,812 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:38:31,823 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.7°F)
+2024-12-17 19:38:31,824 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:38:36,834 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.6°F)
+2024-12-17 19:38:36,834 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:38:41,844 [WARNING] Temperature alert: warning_low - Temperature: 18.8°C (65.9°F)
+2024-12-17 19:38:41,845 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:38:46,781 [WARNING] Temperature alert: warning_low - Temperature: 18.8°C (65.9°F)
+2024-12-17 19:38:46,782 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:38:51,793 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.6°F)
+2024-12-17 19:38:51,794 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:38:56,800 [WARNING] Temperature alert: warning_low - Temperature: 18.4°C (65.1°F)
+2024-12-17 19:38:56,801 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:39:01,808 [WARNING] Temperature alert: warning_low - Temperature: 18.3°C (65.0°F)
+2024-12-17 19:39:01,809 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:39:06,820 [WARNING] Temperature alert: warning_low - Temperature: 18.3°C (65.0°F)
+2024-12-17 19:39:06,821 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:39:11,834 [WARNING] Temperature alert: warning_low - Temperature: 18.3°C (65.0°F)
+2024-12-17 19:39:11,835 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:39:16,847 [WARNING] Temperature alert: warning_low - Temperature: 18.2°C (64.8°F)
+2024-12-17 19:39:16,849 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:39:21,861 [WARNING] Temperature alert: warning_low - Temperature: 18.3°C (65.0°F)
+2024-12-17 19:39:21,863 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:39:26,875 [WARNING] Temperature alert: warning_low - Temperature: 18.3°C (65.0°F)
+2024-12-17 19:39:26,876 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:39:31,888 [WARNING] Temperature alert: warning_low - Temperature: 18.4°C (65.1°F)
+2024-12-17 19:39:31,888 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:39:36,902 [WARNING] Temperature alert: warning_low - Temperature: 18.4°C (65.1°F)
+2024-12-17 19:39:36,903 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:39:41,848 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:39:41,850 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:39:46,865 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.6°F)
+2024-12-17 19:39:46,866 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:39:51,881 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:39:51,882 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:39:56,898 [WARNING] Temperature alert: warning_low - Temperature: 18.6°C (65.4°F)
+2024-12-17 19:39:56,900 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:39:56,901 [INFO] 
+
+==================================================
+THERMAL SYSTEM ANALYSIS REPORT
+==================================================
+Time: 2024-12-17 19:39:56
+Number of Readings: 20
+
+Temperature Statistics:
+---------------------
+Current: 18.5°C
+Minimum: 18.2°C
+Maximum: 18.8°C
+Average: 18.5°C
+
+Control Limits:
+-------------
+UCL: 23.5°C (519 analog)
+LCL: 21.5°C (495 analog)
+
+System Status:
+------------
+Current Status: Temperature approaching low limit
+Temperature Trend: stable
+
+Recommendations:
+--------------
+1. 
+
+==================================================
+
+2024-12-17 19:40:01,914 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:40:01,916 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:40:06,928 [WARNING] Temperature alert: warning_low - Temperature: 18.3°C (65.0°F)
+2024-12-17 19:40:06,930 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:40:11,941 [WARNING] Temperature alert: warning_low - Temperature: 18.4°C (65.1°F)
+2024-12-17 19:40:11,942 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:40:16,950 [WARNING] Temperature alert: warning_low - Temperature: 18.6°C (65.4°F)
+2024-12-17 19:40:16,951 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:40:21,895 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.6°F)
+2024-12-17 19:40:21,897 [ERROR] Error updating display: 'float' object is not subscriptable
+2024-12-17 19:40:28,854 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.7°F)
+2024-12-17 19:40:28,855 [INFO] 
+
+Temperature Report (2024-12-17 19:40:28)
+-----------------------------------------------
+Current Temperature: 18.7°C (65.7°F)
+Analog Reading: 461
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.25V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:40:33,366 [WARNING] Temperature alert: warning_low - Temperature: 18.8°C (65.9°F)
+2024-12-17 19:40:33,368 [INFO] 
+
+Temperature Report (2024-12-17 19:40:33)
+-----------------------------------------------
+Current Temperature: 18.8°C (65.9°F)
+Analog Reading: 462
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.26V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:40:38,378 [WARNING] Temperature alert: warning_low - Temperature: 18.8°C (65.9°F)
+2024-12-17 19:40:38,379 [INFO] 
+
+Temperature Report (2024-12-17 19:40:38)
+-----------------------------------------------
+Current Temperature: 18.8°C (65.9°F)
+Analog Reading: 462
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.26V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:40:43,392 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.6°F)
+2024-12-17 19:40:43,393 [INFO] 
+
+Temperature Report (2024-12-17 19:40:43)
+-----------------------------------------------
+Current Temperature: 18.7°C (65.6°F)
+Analog Reading: 460
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.25V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:40:48,333 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:40:48,334 [INFO] 
+
+Temperature Report (2024-12-17 19:40:48)
+-----------------------------------------------
+Current Temperature: 18.5°C (65.3°F)
+Analog Reading: 458
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.24V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:40:53,347 [WARNING] Temperature alert: warning_low - Temperature: 18.6°C (65.4°F)
+2024-12-17 19:40:53,348 [INFO] 
+
+Temperature Report (2024-12-17 19:40:53)
+-----------------------------------------------
+Current Temperature: 18.6°C (65.4°F)
+Analog Reading: 459
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.24V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:40:58,359 [WARNING] Temperature alert: warning_low - Temperature: 18.6°C (65.4°F)
+2024-12-17 19:40:58,361 [INFO] 
+
+Temperature Report (2024-12-17 19:40:58)
+-----------------------------------------------
+Current Temperature: 18.6°C (65.4°F)
+Analog Reading: 459
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.24V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:41:03,372 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:41:03,373 [INFO] 
+
+Temperature Report (2024-12-17 19:41:03)
+-----------------------------------------------
+Current Temperature: 18.5°C (65.3°F)
+Analog Reading: 458
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.24V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:41:08,386 [WARNING] Temperature alert: warning_low - Temperature: 18.3°C (65.0°F)
+2024-12-17 19:41:08,388 [INFO] 
+
+Temperature Report (2024-12-17 19:41:08)
+-----------------------------------------------
+Current Temperature: 18.3°C (65.0°F)
+Analog Reading: 456
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.23V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:41:13,398 [WARNING] Temperature alert: warning_low - Temperature: 18.2°C (64.8°F)
+2024-12-17 19:41:13,400 [INFO] 
+
+Temperature Report (2024-12-17 19:41:13)
+-----------------------------------------------
+Current Temperature: 18.2°C (64.8°F)
+Analog Reading: 455
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.22V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:41:18,411 [WARNING] Temperature alert: warning_low - Temperature: 18.2°C (64.7°F)
+2024-12-17 19:41:18,412 [INFO] 
+
+Temperature Report (2024-12-17 19:41:18)
+-----------------------------------------------
+Current Temperature: 18.2°C (64.7°F)
+Analog Reading: 454
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.22V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:41:23,425 [WARNING] Temperature alert: warning_low - Temperature: 18.6°C (65.4°F)
+2024-12-17 19:41:23,427 [INFO] 
+
+Temperature Report (2024-12-17 19:41:23)
+-----------------------------------------------
+Current Temperature: 18.6°C (65.4°F)
+Analog Reading: 459
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.24V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:41:28,440 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:41:28,440 [INFO] 
+
+Temperature Report (2024-12-17 19:41:28)
+-----------------------------------------------
+Current Temperature: 18.5°C (65.3°F)
+Analog Reading: 458
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.24V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:41:33,385 [WARNING] Temperature alert: warning_low - Temperature: 18.2°C (64.8°F)
+2024-12-17 19:41:33,386 [INFO] 
+
+Temperature Report (2024-12-17 19:41:33)
+-----------------------------------------------
+Current Temperature: 18.2°C (64.8°F)
+Analog Reading: 455
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.22V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:41:38,398 [WARNING] Temperature alert: warning_low - Temperature: 18.2°C (64.8°F)
+2024-12-17 19:41:38,399 [INFO] 
+
+Temperature Report (2024-12-17 19:41:38)
+-----------------------------------------------
+Current Temperature: 18.2°C (64.8°F)
+Analog Reading: 455
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.22V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:41:43,411 [WARNING] Temperature alert: warning_low - Temperature: 18.2°C (64.8°F)
+2024-12-17 19:41:43,412 [INFO] 
+
+Temperature Report (2024-12-17 19:41:43)
+-----------------------------------------------
+Current Temperature: 18.2°C (64.8°F)
+Analog Reading: 455
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.22V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:41:48,425 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:41:48,426 [INFO] 
+
+Temperature Report (2024-12-17 19:41:48)
+-----------------------------------------------
+Current Temperature: 18.5°C (65.3°F)
+Analog Reading: 458
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.24V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:41:53,437 [WARNING] Temperature alert: warning_low - Temperature: 18.4°C (65.1°F)
+2024-12-17 19:41:53,438 [INFO] 
+
+Temperature Report (2024-12-17 19:41:53)
+-----------------------------------------------
+Current Temperature: 18.4°C (65.1°F)
+Analog Reading: 457
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.23V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:41:58,450 [WARNING] Temperature alert: warning_low - Temperature: 18.2°C (64.8°F)
+2024-12-17 19:41:58,451 [INFO] 
+
+Temperature Report (2024-12-17 19:41:58)
+-----------------------------------------------
+Current Temperature: 18.2°C (64.8°F)
+Analog Reading: 455
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.22V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:42:03,463 [WARNING] Temperature alert: warning_low - Temperature: 18.2°C (64.7°F)
+2024-12-17 19:42:03,465 [INFO] 
+
+Temperature Report (2024-12-17 19:42:03)
+-----------------------------------------------
+Current Temperature: 18.2°C (64.7°F)
+Analog Reading: 454
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.22V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:42:03,493 [INFO] 
+
+==================================================
+THERMAL SYSTEM ANALYSIS REPORT
+==================================================
+Time: 2024-12-17 19:42:03
+Number of Readings: 20
+
+Temperature Statistics:
+---------------------
+Current: 18.2°C
+Minimum: 18.2°C
+Maximum: 18.8°C
+Average: 18.4°C
+
+Control Limits:
+-------------
+UCL: 23.5°C (519 analog)
+LCL: 21.5°C (495 analog)
+
+System Status:
+------------
+Current Status: Temperature approaching low limit
+Temperature Trend: stable
+
+Recommendations:
+--------------
+1. 
+
+==================================================
+
+2024-12-17 19:42:08,428 [WARNING] Temperature alert: warning_low - Temperature: 18.2°C (64.7°F)
+2024-12-17 19:42:08,429 [INFO] 
+
+Temperature Report (2024-12-17 19:42:08)
+-----------------------------------------------
+Current Temperature: 18.2°C (64.7°F)
+Analog Reading: 454
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.22V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:42:13,437 [WARNING] Temperature alert: warning_low - Temperature: 18.2°C (64.8°F)
+2024-12-17 19:42:13,437 [INFO] 
+
+Temperature Report (2024-12-17 19:42:13)
+-----------------------------------------------
+Current Temperature: 18.2°C (64.8°F)
+Analog Reading: 455
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.22V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:42:18,444 [WARNING] Temperature alert: warning_low - Temperature: 18.4°C (65.1°F)
+2024-12-17 19:42:18,444 [INFO] 
+
+Temperature Report (2024-12-17 19:42:18)
+-----------------------------------------------
+Current Temperature: 18.4°C (65.1°F)
+Analog Reading: 457
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.23V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:42:23,452 [WARNING] Temperature alert: warning_low - Temperature: 18.3°C (65.0°F)
+2024-12-17 19:42:23,453 [INFO] 
+
+Temperature Report (2024-12-17 19:42:23)
+-----------------------------------------------
+Current Temperature: 18.3°C (65.0°F)
+Analog Reading: 456
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.23V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:42:28,461 [WARNING] Temperature alert: warning_low - Temperature: 18.4°C (65.1°F)
+2024-12-17 19:42:28,462 [INFO] 
+
+Temperature Report (2024-12-17 19:42:28)
+-----------------------------------------------
+Current Temperature: 18.4°C (65.1°F)
+Analog Reading: 457
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.23V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:42:33,471 [WARNING] Temperature alert: warning_low - Temperature: 18.6°C (65.4°F)
+2024-12-17 19:42:33,471 [INFO] 
+
+Temperature Report (2024-12-17 19:42:33)
+-----------------------------------------------
+Current Temperature: 18.6°C (65.4°F)
+Analog Reading: 459
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.24V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:42:38,480 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.6°F)
+2024-12-17 19:42:38,481 [INFO] 
+
+Temperature Report (2024-12-17 19:42:38)
+-----------------------------------------------
+Current Temperature: 18.7°C (65.6°F)
+Analog Reading: 460
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.25V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:42:43,491 [WARNING] Temperature alert: warning_low - Temperature: 18.6°C (65.4°F)
+2024-12-17 19:42:43,491 [INFO] 
+
+Temperature Report (2024-12-17 19:42:43)
+-----------------------------------------------
+Current Temperature: 18.6°C (65.4°F)
+Analog Reading: 459
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.24V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:42:48,500 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:42:48,501 [INFO] 
+
+Temperature Report (2024-12-17 19:42:48)
+-----------------------------------------------
+Current Temperature: 18.5°C (65.3°F)
+Analog Reading: 458
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.24V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:42:53,508 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:42:53,509 [INFO] 
+
+Temperature Report (2024-12-17 19:42:53)
+-----------------------------------------------
+Current Temperature: 18.5°C (65.3°F)
+Analog Reading: 458
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.24V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:42:58,516 [WARNING] Temperature alert: warning_low - Temperature: 18.6°C (65.4°F)
+2024-12-17 19:42:58,517 [INFO] 
+
+Temperature Report (2024-12-17 19:42:58)
+-----------------------------------------------
+Current Temperature: 18.6°C (65.4°F)
+Analog Reading: 459
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.24V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:43:03,524 [WARNING] Temperature alert: warning_low - Temperature: 18.4°C (65.1°F)
+2024-12-17 19:43:03,525 [INFO] 
+
+Temperature Report (2024-12-17 19:43:03)
+-----------------------------------------------
+Current Temperature: 18.4°C (65.1°F)
+Analog Reading: 457
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.23V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:43:08,533 [WARNING] Temperature alert: warning_low - Temperature: 18.4°C (65.1°F)
+2024-12-17 19:43:08,534 [INFO] 
+
+Temperature Report (2024-12-17 19:43:08)
+-----------------------------------------------
+Current Temperature: 18.4°C (65.1°F)
+Analog Reading: 457
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.23V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:43:13,543 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:43:13,545 [INFO] 
+
+Temperature Report (2024-12-17 19:43:13)
+-----------------------------------------------
+Current Temperature: 18.5°C (65.3°F)
+Analog Reading: 458
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.24V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:43:18,557 [WARNING] Temperature alert: warning_low - Temperature: 18.6°C (65.4°F)
+2024-12-17 19:43:18,558 [INFO] 
+
+Temperature Report (2024-12-17 19:43:18)
+-----------------------------------------------
+Current Temperature: 18.6°C (65.4°F)
+Analog Reading: 459
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.24V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:43:23,567 [WARNING] Temperature alert: warning_low - Temperature: 18.4°C (65.1°F)
+2024-12-17 19:43:23,567 [INFO] 
+
+Temperature Report (2024-12-17 19:43:23)
+-----------------------------------------------
+Current Temperature: 18.4°C (65.1°F)
+Analog Reading: 457
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.23V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:43:28,575 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:43:28,577 [INFO] 
+
+Temperature Report (2024-12-17 19:43:28)
+-----------------------------------------------
+Current Temperature: 18.5°C (65.3°F)
+Analog Reading: 458
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 2.24V
+Voltage Status: voltage_low
+Warning: System voltage low
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:43:37,224 [WARNING] Temperature alert: warning_low - Temperature: 18.4°C (65.1°F)
+2024-12-17 19:43:37,225 [INFO] 
+
+Temperature Report (2024-12-17 19:43:37)
+-----------------------------------------------
+Current Temperature: 18.4°C (65.1°F)
+Analog Reading: 457
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:43:41,633 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:43:41,635 [INFO] 
+
+Temperature Report (2024-12-17 19:43:41)
+-----------------------------------------------
+Current Temperature: 18.5°C (65.3°F)
+Analog Reading: 458
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:43:46,648 [WARNING] Temperature alert: warning_low - Temperature: 18.8°C (65.9°F)
+2024-12-17 19:43:46,650 [INFO] 
+
+Temperature Report (2024-12-17 19:43:46)
+-----------------------------------------------
+Current Temperature: 18.8°C (65.9°F)
+Analog Reading: 462
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:43:51,659 [WARNING] Temperature alert: warning_low - Temperature: 19.1°C (66.3°F)
+2024-12-17 19:43:51,660 [INFO] 
+
+Temperature Report (2024-12-17 19:43:51)
+-----------------------------------------------
+Current Temperature: 19.1°C (66.3°F)
+Analog Reading: 465
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:44:47,794 [WARNING] Temperature alert: warning_low - Temperature: 19.0°C (66.2°F)
+2024-12-17 19:44:47,795 [INFO] 
+
+Temperature Report (2024-12-17 19:44:47)
+-----------------------------------------------
+Current Temperature: 19.0°C (66.2°F)
+Analog Reading: 464
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:44:52,304 [WARNING] Temperature alert: warning_low - Temperature: 18.9°C (66.0°F)
+2024-12-17 19:44:52,305 [INFO] 
+
+Temperature Report (2024-12-17 19:44:52)
+-----------------------------------------------
+Current Temperature: 18.9°C (66.0°F)
+Analog Reading: 463
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:44:57,314 [WARNING] Temperature alert: warning_low - Temperature: 18.8°C (65.9°F)
+2024-12-17 19:44:57,316 [INFO] 
+
+Temperature Report (2024-12-17 19:44:57)
+-----------------------------------------------
+Current Temperature: 18.8°C (65.9°F)
+Analog Reading: 462
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:45:02,323 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.7°F)
+2024-12-17 19:45:02,325 [INFO] 
+
+Temperature Report (2024-12-17 19:45:02)
+-----------------------------------------------
+Current Temperature: 18.7°C (65.7°F)
+Analog Reading: 461
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:45:07,332 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.7°F)
+2024-12-17 19:45:07,333 [INFO] 
+
+Temperature Report (2024-12-17 19:45:07)
+-----------------------------------------------
+Current Temperature: 18.7°C (65.7°F)
+Analog Reading: 461
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:45:12,342 [WARNING] Temperature alert: warning_low - Temperature: 19.0°C (66.2°F)
+2024-12-17 19:45:12,372 [INFO] 
+
+Temperature Report (2024-12-17 19:45:12)
+-----------------------------------------------
+Current Temperature: 19.0°C (66.2°F)
+Analog Reading: 464
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:47:04,414 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.6°F)
+2024-12-17 19:47:04,414 [INFO] 
+
+Temperature Report (2024-12-17 19:47:04)
+-----------------------------------------------
+Current Temperature: 18.7°C (65.6°F)
+Analog Reading: 460
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:47:08,931 [WARNING] Temperature alert: warning_low - Temperature: 18.9°C (66.0°F)
+2024-12-17 19:47:08,932 [INFO] 
+
+Temperature Report (2024-12-17 19:47:08)
+-----------------------------------------------
+Current Temperature: 18.9°C (66.0°F)
+Analog Reading: 463
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:47:13,945 [WARNING] Temperature alert: warning_low - Temperature: 18.9°C (66.0°F)
+2024-12-17 19:47:13,946 [INFO] 
+
+Temperature Report (2024-12-17 19:47:13)
+-----------------------------------------------
+Current Temperature: 18.9°C (66.0°F)
+Analog Reading: 463
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:47:18,890 [WARNING] Temperature alert: warning_low - Temperature: 18.8°C (65.9°F)
+2024-12-17 19:47:18,892 [INFO] 
+
+Temperature Report (2024-12-17 19:47:18)
+-----------------------------------------------
+Current Temperature: 18.8°C (65.9°F)
+Analog Reading: 462
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:47:23,905 [WARNING] Temperature alert: warning_high - Temperature: 25.7°C (78.2°F)
+2024-12-17 19:47:23,907 [INFO] 
+
+Temperature Report (2024-12-17 19:47:23)
+-----------------------------------------------
+Current Temperature: 25.7°C (78.2°F)
+Analog Reading: 546
+System Status: warning_high
+Temperature Trend: rising (12.0°C/min)
+
+Analysis:
+Temperature is approaching upper limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:47:28,920 [WARNING] Temperature alert: warning_high - Temperature: 26.6°C (80.0°F)
+2024-12-17 19:47:28,921 [INFO] 
+
+Temperature Report (2024-12-17 19:47:28)
+-----------------------------------------------
+Current Temperature: 26.6°C (80.0°F)
+Analog Reading: 558
+System Status: warning_high
+Temperature Trend: rising (10.5°C/min)
+
+Analysis:
+Temperature is approaching upper limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:47:33,934 [WARNING] Temperature alert: warning_high - Temperature: 26.6°C (80.0°F)
+2024-12-17 19:47:33,935 [INFO] 
+
+Temperature Report (2024-12-17 19:47:33)
+-----------------------------------------------
+Current Temperature: 26.6°C (80.0°F)
+Analog Reading: 558
+System Status: warning_high
+Temperature Trend: rising (10.5°C/min)
+
+Analysis:
+Temperature is approaching upper limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:47:38,944 [WARNING] Temperature alert: warning_high - Temperature: 26.9°C (80.4°F)
+2024-12-17 19:47:38,945 [INFO] 
+
+Temperature Report (2024-12-17 19:47:38)
+-----------------------------------------------
+Current Temperature: 26.9°C (80.4°F)
+Analog Reading: 561
+System Status: warning_high
+Temperature Trend: rising (10.7°C/min)
+
+Analysis:
+Temperature is approaching upper limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:47:43,951 [WARNING] Temperature alert: warning_high - Temperature: 27.1°C (80.7°F)
+2024-12-17 19:47:43,952 [INFO] 
+
+Temperature Report (2024-12-17 19:47:43)
+-----------------------------------------------
+Current Temperature: 27.1°C (80.7°F)
+Analog Reading: 563
+System Status: warning_high
+Temperature Trend: rising (11.1°C/min)
+
+Analysis:
+Temperature is approaching upper limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:47:48,957 [WARNING] Temperature alert: warning_high - Temperature: 27.2°C (81.0°F)
+2024-12-17 19:47:48,958 [INFO] 
+
+Temperature Report (2024-12-17 19:47:48)
+-----------------------------------------------
+Current Temperature: 27.2°C (81.0°F)
+Analog Reading: 565
+System Status: warning_high
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching upper limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:47:53,964 [WARNING] Temperature alert: warning_high - Temperature: 25.0°C (77.0°F)
+2024-12-17 19:47:53,965 [INFO] 
+
+Temperature Report (2024-12-17 19:47:53)
+-----------------------------------------------
+Current Temperature: 25.0°C (77.0°F)
+Analog Reading: 538
+System Status: warning_high
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching upper limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:47:58,976 [INFO] 
+
+Temperature Report (2024-12-17 19:47:58)
+-----------------------------------------------
+Current Temperature: 22.5°C (72.5°F)
+Analog Reading: 507
+System Status: normal
+Temperature Trend: stable
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:48:03,984 [INFO] 
+
+Temperature Report (2024-12-17 19:48:03)
+-----------------------------------------------
+Current Temperature: 20.9°C (69.7°F)
+Analog Reading: 488
+System Status: normal
+Temperature Trend: falling (8.0°C/min)
+
+Analysis:
+Temperature is stable and within normal range.
+
+Recommended Actions:
+
+Priority Level: NORMAL
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:48:08,992 [WARNING] Temperature alert: warning_low - Temperature: 20.0°C (68.1°F)
+2024-12-17 19:48:08,993 [INFO] 
+
+Temperature Report (2024-12-17 19:48:08)
+-----------------------------------------------
+Current Temperature: 20.0°C (68.1°F)
+Analog Reading: 477
+System Status: warning_low
+Temperature Trend: falling (9.5°C/min)
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:48:14,003 [WARNING] Temperature alert: warning_low - Temperature: 19.6°C (67.3°F)
+2024-12-17 19:48:14,003 [INFO] 
+
+Temperature Report (2024-12-17 19:48:14)
+-----------------------------------------------
+Current Temperature: 19.6°C (67.3°F)
+Analog Reading: 472
+System Status: warning_low
+Temperature Trend: falling (10.1°C/min)
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:48:19,014 [WARNING] Temperature alert: warning_low - Temperature: 19.3°C (66.8°F)
+2024-12-17 19:48:19,015 [INFO] 
+
+Temperature Report (2024-12-17 19:48:19)
+-----------------------------------------------
+Current Temperature: 19.3°C (66.8°F)
+Analog Reading: 468
+System Status: warning_low
+Temperature Trend: falling (7.6°C/min)
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:48:24,024 [WARNING] Temperature alert: warning_low - Temperature: 19.1°C (66.3°F)
+2024-12-17 19:48:24,026 [INFO] 
+
+Temperature Report (2024-12-17 19:48:24)
+-----------------------------------------------
+Current Temperature: 19.1°C (66.3°F)
+Analog Reading: 465
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:48:29,036 [WARNING] Temperature alert: warning_low - Temperature: 19.0°C (66.2°F)
+2024-12-17 19:48:29,036 [INFO] 
+
+Temperature Report (2024-12-17 19:48:29)
+-----------------------------------------------
+Current Temperature: 19.0°C (66.2°F)
+Analog Reading: 464
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:48:33,977 [WARNING] Temperature alert: warning_low - Temperature: 19.1°C (66.3°F)
+2024-12-17 19:48:33,978 [INFO] 
+
+Temperature Report (2024-12-17 19:48:33)
+-----------------------------------------------
+Current Temperature: 19.1°C (66.3°F)
+Analog Reading: 465
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:48:38,987 [WARNING] Temperature alert: warning_low - Temperature: 18.9°C (66.0°F)
+2024-12-17 19:48:38,987 [INFO] 
+
+Temperature Report (2024-12-17 19:48:38)
+-----------------------------------------------
+Current Temperature: 18.9°C (66.0°F)
+Analog Reading: 463
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:48:38,987 [INFO] 
+
+==================================================
+THERMAL SYSTEM ANALYSIS REPORT
+==================================================
+Time: 2024-12-17 19:48:38
+Number of Readings: 20
+
+Temperature Statistics:
+---------------------
+Current: 19.1°C
+Minimum: 18.7°C
+Maximum: 27.2°C
+Average: 22.1°C
+
+Control Limits:
+-------------
+UCL: 23.5°C (519 analog)
+LCL: 21.5°C (495 analog)
+
+System Status:
+------------
+Current Status: Temperature approaching low limit
+Temperature Trend: falling (10.8°C/min)
+
+Recommendations:
+--------------
+1. 
+
+==================================================
+
+2024-12-17 19:48:43,996 [WARNING] Temperature alert: warning_low - Temperature: 19.0°C (66.2°F)
+2024-12-17 19:48:43,997 [INFO] 
+
+Temperature Report (2024-12-17 19:48:43)
+-----------------------------------------------
+Current Temperature: 19.0°C (66.2°F)
+Analog Reading: 464
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:48:49,004 [WARNING] Temperature alert: warning_low - Temperature: 19.0°C (66.2°F)
+2024-12-17 19:48:49,005 [INFO] 
+
+Temperature Report (2024-12-17 19:48:49)
+-----------------------------------------------
+Current Temperature: 19.0°C (66.2°F)
+Analog Reading: 464
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:48:54,012 [WARNING] Temperature alert: warning_low - Temperature: 19.0°C (66.2°F)
+2024-12-17 19:48:54,013 [INFO] 
+
+Temperature Report (2024-12-17 19:48:54)
+-----------------------------------------------
+Current Temperature: 19.0°C (66.2°F)
+Analog Reading: 464
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:48:59,023 [WARNING] Temperature alert: warning_low - Temperature: 18.8°C (65.9°F)
+2024-12-17 19:48:59,025 [INFO] 
+
+Temperature Report (2024-12-17 19:48:59)
+-----------------------------------------------
+Current Temperature: 18.8°C (65.9°F)
+Analog Reading: 462
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:49:04,036 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.7°F)
+2024-12-17 19:49:04,037 [INFO] 
+
+Temperature Report (2024-12-17 19:49:04)
+-----------------------------------------------
+Current Temperature: 18.7°C (65.7°F)
+Analog Reading: 461
+System Status: warning_low
+Temperature Trend: stable
+
+Analysis:
+Temperature is approaching lower limit.
+
+Recommended Actions:
+1. Monitor system closely
+2. Prepare for intervention
+3. Review recent changes
+
+Priority Level: MEDIUM
+
+Power System Status:
+-------------------
+Estimated Voltage: 5.00V
+Voltage Status: voltage_low
+Warning: Check power supply or connections
+
+Control Limits:
+-------------
+Analog UCL: 519 (23.5°C)
+Analog LCL: 495 (21.5°C)
+
+2024-12-17 19:49:13,577 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:49:13,578 [INFO] 
+
+THERMAL SYSTEM STATUS (19:49:13)
+Temperature: 18.5°C (65.3°F)
+Status: WARNING_LOW
+Trend: stable
+Voltage Alert: Warning: Check power supply or connections
+
+Action Required: Temperature is approaching lower limit.
+Next Steps: Monitor system closely | Prepare for intervention
+
+2024-12-17 19:49:18,086 [WARNING] Temperature alert: warning_low - Temperature: 18.2°C (64.8°F)
+2024-12-17 19:49:23,098 [WARNING] Temperature alert: warning_low - Temperature: 18.5°C (65.3°F)
+2024-12-17 19:49:28,113 [WARNING] Temperature alert: warning_high - Temperature: 27.1°C (80.7°F)
+2024-12-17 19:49:28,115 [INFO] 
+
+THERMAL SYSTEM STATUS (19:49:28)
+Temperature: 27.1°C (80.7°F)
+Status: WARNING_HIGH
+Trend: stable
+Voltage Alert: Warning: Check power supply or connections
+
+Action Required: Temperature is approaching upper limit.
+Next Steps: Monitor system closely | Prepare for intervention
+
+2024-12-17 19:49:33,058 [WARNING] Temperature alert: warning_high - Temperature: 28.3°C (82.9°F)
+2024-12-17 19:49:38,073 [WARNING] Temperature alert: warning_high - Temperature: 28.6°C (83.5°F)
+2024-12-17 19:49:43,089 [WARNING] Temperature alert: warning_high - Temperature: 28.8°C (83.9°F)
+2024-12-17 19:49:48,106 [WARNING] Temperature alert: warning_high - Temperature: 29.2°C (84.5°F)
+2024-12-17 19:49:48,108 [INFO] 
+
+THERMAL SYSTEM STATUS (19:49:48)
+Temperature: 29.2°C (84.5°F)
+Status: WARNING_HIGH
+Trend: rising (103.2°C/min)
+Voltage Alert: Warning: Check power supply or connections
+
+Action Required: Temperature is approaching upper limit.
+Next Steps: Monitor system closely | Prepare for intervention
+
+2024-12-17 19:49:53,121 [WARNING] Temperature alert: warning_high - Temperature: 29.3°C (84.7°F)
+2024-12-17 19:49:58,135 [WARNING] Temperature alert: warning_high - Temperature: 29.2°C (84.5°F)
+2024-12-17 19:50:03,149 [WARNING] Temperature alert: warning_high - Temperature: 29.2°C (84.5°F)
+2024-12-17 19:50:03,151 [INFO] 
+
+==================================================
+THERMAL SYSTEM ANALYSIS REPORT
+==================================================
+Time: 2024-12-17 19:50:03
+Number of Readings: 20
+
+Temperature Statistics:
+---------------------
+Current: 29.2°C
+Minimum: 18.2°C
+Maximum: 29.3°C
+Average: 25.6°C
+
+Control Limits:
+-------------
+UCL: 23.5°C (519 analog)
+LCL: 21.5°C (495 analog)
+
+System Status:
+------------
+Current Status: Temperature approaching high limit
+Temperature Trend: rising (14.3°C/min)
+
+Recommendations:
+--------------
+1. 
+
+==================================================
+
+2024-12-17 19:50:08,101 [WARNING] Temperature alert: warning_high - Temperature: 29.1°C (84.4°F)
+2024-12-17 19:50:13,116 [WARNING] Temperature alert: warning_high - Temperature: 28.5°C (83.3°F)
+2024-12-17 19:50:18,130 [WARNING] Temperature alert: warning_high - Temperature: 25.3°C (77.6°F)
+2024-12-17 19:50:18,131 [INFO] 
+
+THERMAL SYSTEM STATUS (19:50:18)
+Temperature: 25.3°C (77.6°F)
+Status: WARNING_HIGH
+Trend: rising (42.8°C/min)
+Voltage Alert: Warning: Check power supply or connections
+
+Action Required: Temperature is approaching upper limit.
+Next Steps: Monitor system closely | Prepare for intervention
+
+2024-12-17 19:50:23,143 [INFO] 
+
+THERMAL SYSTEM STATUS (19:50:23)
+Temperature: 23.1°C (73.5°F)
+Status: NORMAL
+Trend: rising (20.4°C/min)
+Voltage Alert: Warning: Check power supply or connections
+
+2024-12-17 19:50:33,171 [INFO] 
+
+THERMAL SYSTEM STATUS (19:50:33)
+Temperature: 20.9°C (69.5°F)
+Status: NORMAL
+Trend: rising (11.0°C/min)
+Voltage Alert: Warning: Check power supply or connections
+
+2024-12-17 19:50:43,196 [WARNING] Temperature alert: warning_low - Temperature: 19.9°C (67.8°F)
+2024-12-17 19:50:43,197 [INFO] 
+
+THERMAL SYSTEM STATUS (19:50:43)
+Temperature: 19.9°C (67.8°F)
+Status: WARNING_LOW
+Trend: stable
+Voltage Alert: Warning: Check power supply or connections
+
+Action Required: Temperature is approaching lower limit.
+Next Steps: Monitor system closely | Prepare for intervention
+
+2024-12-17 19:50:48,210 [WARNING] Temperature alert: warning_low - Temperature: 19.8°C (67.6°F)
+2024-12-17 19:50:53,155 [WARNING] Temperature alert: warning_low - Temperature: 19.7°C (67.5°F)
+2024-12-17 19:50:58,168 [WARNING] Temperature alert: warning_low - Temperature: 19.8°C (67.6°F)
+2024-12-17 19:50:58,170 [INFO] 
+
+==================================================
+THERMAL SYSTEM ANALYSIS REPORT
+==================================================
+Time: 2024-12-17 19:50:58
+Number of Readings: 20
+
+Temperature Statistics:
+---------------------
+Current: 19.7°C
+Minimum: 18.2°C
+Maximum: 29.3°C
+Average: 24.4°C
+
+Control Limits:
+-------------
+UCL: 23.5°C (519 analog)
+LCL: 21.5°C (495 analog)
+
+System Status:
+------------
+Current Status: Temperature approaching low limit
+Temperature Trend: falling (12.5°C/min)
+
+Recommendations:
+--------------
+1. 
+
+==================================================
+
+2024-12-17 19:51:03,186 [WARNING] Temperature alert: warning_low - Temperature: 19.7°C (67.5°F)
+2024-12-17 19:51:08,201 [WARNING] Temperature alert: warning_low - Temperature: 19.6°C (67.2°F)
+2024-12-17 19:51:13,216 [WARNING] Temperature alert: warning_low - Temperature: 19.3°C (66.8°F)
+2024-12-17 19:51:18,229 [WARNING] Temperature alert: warning_low - Temperature: 19.1°C (66.5°F)
+2024-12-17 19:51:23,243 [WARNING] Temperature alert: warning_low - Temperature: 19.1°C (66.3°F)
+2024-12-17 19:51:28,259 [WARNING] Temperature alert: warning_low - Temperature: 19.0°C (66.2°F)
+2024-12-17 19:51:33,203 [WARNING] Temperature alert: warning_low - Temperature: 19.0°C (66.2°F)
+2024-12-17 19:51:38,216 [WARNING] Temperature alert: warning_low - Temperature: 18.9°C (66.0°F)
+2024-12-17 19:51:43,232 [WARNING] Temperature alert: warning_low - Temperature: 19.0°C (66.2°F)
+2024-12-17 19:51:48,242 [WARNING] Temperature alert: warning_low - Temperature: 19.0°C (66.2°F)
+2024-12-17 19:51:53,251 [WARNING] Temperature alert: warning_low - Temperature: 19.1°C (66.5°F)
+2024-12-17 19:51:53,251 [INFO] 
+
+THERMAL SYSTEM STATUS (19:51:53)
+Temperature: 19.1°C (66.5°F)
+Status: WARNING_LOW
+Trend: stable
+Voltage Alert: Warning: Check power supply or connections
+
+Action Required: Temperature is approaching lower limit.
+Next Steps: Monitor system closely | Prepare for intervention
+
+2024-12-17 19:51:53,253 [INFO] 
+
+==================================================
+THERMAL SYSTEM ANALYSIS REPORT
+==================================================
+Time: 2024-12-17 19:51:53
+Number of Readings: 20
+
+Temperature Statistics:
+---------------------
+Current: 19.1°C
+Minimum: 18.2°C
+Maximum: 29.3°C
+Average: 22.5°C
+
+Control Limits:
+-------------
+UCL: 23.5°C (519 analog)
+LCL: 21.5°C (495 analog)
+
+System Status:
+------------
+Current Status: Temperature approaching low limit
+Temperature Trend: stable
+
+Recommendations:
+--------------
+1. 
+
+==================================================
+
+2024-12-17 19:51:58,264 [WARNING] Temperature alert: warning_low - Temperature: 19.2°C (66.6°F)
+2024-12-17 19:52:03,276 [WARNING] Temperature alert: warning_low - Temperature: 19.2°C (66.6°F)
+2024-12-17 19:52:08,286 [WARNING] Temperature alert: warning_low - Temperature: 19.2°C (66.6°F)
+2024-12-17 19:52:13,294 [WARNING] Temperature alert: warning_low - Temperature: 19.1°C (66.5°F)
+2024-12-17 19:52:18,303 [WARNING] Temperature alert: warning_low - Temperature: 19.0°C (66.2°F)
+2024-12-17 19:52:23,316 [WARNING] Temperature alert: warning_low - Temperature: 18.8°C (65.9°F)
+2024-12-17 19:52:28,326 [WARNING] Temperature alert: warning_low - Temperature: 18.8°C (65.9°F)
+2024-12-17 19:52:33,334 [WARNING] Temperature alert: warning_low - Temperature: 18.9°C (66.0°F)
+2024-12-17 19:52:38,343 [WARNING] Temperature alert: warning_low - Temperature: 19.0°C (66.2°F)
+2024-12-17 19:52:43,351 [WARNING] Temperature alert: warning_low - Temperature: 19.2°C (66.6°F)
+2024-12-17 19:52:48,292 [WARNING] Temperature alert: warning_low - Temperature: 19.3°C (66.8°F)
+2024-12-17 19:52:48,294 [INFO] 
+
+THERMAL SYSTEM STATUS (19:52:48)
+Temperature: 19.3°C (66.8°F)
+Status: WARNING_LOW
+Trend: falling (10.7°C/min)
+Voltage Alert: Warning: Check power supply or connections
+
+Action Required: Temperature is approaching lower limit.
+Next Steps: Monitor system closely | Prepare for intervention
+
+2024-12-17 19:52:48,294 [INFO] 
+
+==================================================
+THERMAL SYSTEM ANALYSIS REPORT
+==================================================
+Time: 2024-12-17 19:52:48
+Number of Readings: 20
+
+Temperature Statistics:
+---------------------
+Current: 19.3°C
+Minimum: 18.2°C
+Maximum: 29.3°C
+Average: 21.7°C
+
+Control Limits:
+-------------
+UCL: 23.5°C (519 analog)
+LCL: 21.5°C (495 analog)
+
+System Status:
+------------
+Current Status: Temperature approaching low limit
+Temperature Trend: stable
+
+Recommendations:
+--------------
+1. 
+
+==================================================
+
+2024-12-17 19:52:53,305 [WARNING] Temperature alert: warning_low - Temperature: 19.2°C (66.6°F)
+2024-12-17 19:52:58,315 [WARNING] Temperature alert: warning_low - Temperature: 19.1°C (66.3°F)
+2024-12-17 19:53:03,323 [WARNING] Temperature alert: warning_low - Temperature: 18.8°C (65.9°F)
+2024-12-17 19:53:08,331 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.7°F)
+2024-12-17 19:53:13,338 [WARNING] Temperature alert: warning_low - Temperature: 18.7°C (65.6°F)
+2024-12-17 19:53:18,346 [WARNING] Temperature alert: warning_low - Temperature: 18.9°C (66.0°F)
+2024-12-17 19:53:23,356 [WARNING] Temperature alert: warning_low - Temperature: 19.1°C (66.3°F)
+2024-12-17 19:53:28,368 [WARNING] Temperature alert: warning_low - Temperature: 19.1°C (66.5°F)
+2024-12-17 19:53:33,381 [WARNING] Temperature alert: warning_low - Temperature: 19.4°C (66.9°F)
+2024-12-17 19:53:38,393 [WARNING] Temperature alert: warning_low - Temperature: 19.6°C (67.3°F)
+2024-12-17 19:53:43,405 [WARNING] Temperature alert: warning_low - Temperature: 19.5°C (67.0°F)
+2024-12-17 19:53:43,406 [INFO] 
+
+THERMAL SYSTEM STATUS (19:53:43)
+Temperature: 19.5°C (67.0°F)
+Status: WARNING_LOW
+Trend: falling (13.2°C/min)
+Voltage Alert: Warning: Check power supply or connections
+
+Action Required: Temperature is approaching lower limit.
+Next Steps: Monitor system closely | Prepare for intervention
+
+2024-12-17 19:53:43,406 [INFO] 
+
+==================================================
+THERMAL SYSTEM ANALYSIS REPORT
+==================================================
+Time: 2024-12-17 19:53:43
+Number of Readings: 20
+
+Temperature Statistics:
+---------------------
+Current: 19.5°C
+Minimum: 18.2°C
+Maximum: 29.3°C
+Average: 21.2°C
+
+Control Limits:
+-------------
+UCL: 23.5°C (519 analog)
+LCL: 21.5°C (495 analog)
+
+System Status:
+------------
+Current Status: Temperature approaching low limit
+Temperature Trend: stable
+
+Recommendations:
+--------------
+1. 
+
+==================================================
+
+2024-12-17 19:53:48,417 [WARNING] Temperature alert: warning_low - Temperature: 19.3°C (66.8°F)
+2024-12-17 19:53:53,426 [WARNING] Temperature alert: warning_low - Temperature: 19.3°C (66.8°F)
+2024-12-17 19:53:58,435 [WARNING] Temperature alert: warning_low - Temperature: 19.2°C (66.6°F)
+2024-12-17 19:54:03,447 [WARNING] Temperature alert: warning_low - Temperature: 19.4°C (66.9°F)
+2024-12-17 19:54:08,392 [WARNING] Temperature alert: warning_low - Temperature: 19.4°C (66.9°F)
+2024-12-17 19:54:13,401 [WARNING] Temperature alert: warning_low - Temperature: 19.2°C (66.6°F)
+2024-12-17 19:54:18,408 [WARNING] Temperature alert: warning_low - Temperature: 19.1°C (66.5°F)
+2024-12-17 19:54:23,415 [WARNING] Temperature alert: warning_low - Temperature: 19.1°C (66.5°F)
+2024-12-17 19:54:28,424 [WARNING] Temperature alert: warning_low - Temperature: 19.2°C (66.6°F)

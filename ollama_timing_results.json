@@ -1,0 +1,128 @@
+[
+  {
+    "prompt": "What is 2+2?...",
+    "avg_first_response": 0.4213863372802734,
+    "avg_total_time": 0.42341928482055663,
+    "avg_lines": 2.0,
+    "min_time": 0.32686805725097656,
+    "max_time": 0.5943167209625244
+  },
+  {
+    "prompt": "Analyze this temperature: 18.5\u00b0C...",
+    "avg_first_response": 9.942119121551514,
+    "avg_total_time": 13.845604372024535,
+    "avg_lines": 3.4,
+    "min_time": 6.473049640655518,
+    "max_time": 26.460793495178223
+  },
+  {
+    "prompt": "Analyze this thermal data:\n            Temperature...",
+    "avg_first_response": 7.434450769424439,
+    "avg_total_time": 26.98030686378479,
+    "avg_lines": 8.0,
+    "min_time": 22.51961350440979,
+    "max_time": 31.90732216835022
+  }
+]
+
+
+Attempting to connect to Arduino...
+Successfully connected to Arduino
+2024-12-17 20:31:21,063 [INFO] Analysis mode set to 'technical'
+Using 20s timeout for complexity level 4
+Starting AI analysis at 1734489081.065192
+Sending prompt to Ollama:
+
+            
+            You are in technical analysis mode. Focus on:
+            1. Rate of temperature change
+            2. Pattern recognition
+            3. Statistical anomalies
+            4....
+Got response at 25.58s: 1. Temperature Trend Analysis: The current temperature reading of 19.4°C (66.9°F) is within the Syst...
+Analysis taking too long, terminating...
+Analysis completed in 25.58s
+Response length: 350 chars
+2024-12-17 20:31:46,642 [INFO] THERMAL EVENT - warning_low: Temperature: 19.4°C, Rate: 0.00°C/min
+2024-12-17 20:31:46,642 [INFO] Action log_event executed with result: True
+2024-12-17 20:31:46,645 [INFO] Analysis mode set to 'technical'
+Using 20s timeout for complexity level 4
+Starting AI analysis at 1734489106.6456053
+Sending prompt to Ollama:
+
+            
+            You are in technical analysis mode. Focus on:
+            1. Rate of temperature change
+            2. Pattern recognition
+            3. Statistical anomalies
+            4....
+Got response at 20.76s: 1. **Temperature Trend Analysis:** The current temperature of 19.6°C (67.2°F) is increasing at a rat...
+Analysis taking too long, terminating...
+Analysis completed in 20.76s
+Response length: 305 chars
+2024-12-17 20:32:07,406 [INFO] THERMAL EVENT - warning_low: Temperature: 19.6°C, Rate: 0.47°C/min
+2024-12-17 20:32:07,406 [INFO] Action log_event executed with result: True
+2024-12-17 20:32:07,408 [INFO] Analysis mode set to 'technical'
+Using 20s timeout for complexity level 4
+Starting AI analysis at 1734489127.4085023
+Sending prompt to Ollama:
+
+            
+            You are in technical analysis mode. Focus on:
+            1. Rate of temperature change
+            2. Pattern recognition
+            3. Statistical anomalies
+            4....
+Got response at 20.51s: 1. Temperature Trend Analysis: The current temperature reading of 19.6°C (67.2°F) is relatively stab...
+Analysis taking too long, terminating...
+Analysis completed in 20.51s
+Response length: 244 chars
+2024-12-17 20:32:27,918 [INFO] THERMAL EVENT - warning_low: Temperature: 19.6°C, Rate: 0.00°C/min
+2024-12-17 20:32:27,918 [INFO] Action log_event executed with result: True
+2024-12-17 20:32:27,919 [INFO] Analysis mode set to 'technical'
+Using 20s timeout for complexity level 4
+Starting AI analysis at 1734489147.9197624
+Sending prompt to Ollama:
+
+            
+            You are in technical analysis mode. Focus on:
+            1. Rate of temperature change
+            2. Pattern recognition
+            3. Statistical anomalies
+            4....
+Got response at 23.45s: 1. Temperature Trend Analysis: The current temperature reading of 19.8°C (67.6°F) is an upward trend...
+Analysis taking too long, terminating...
+Analysis completed in 23.45s
+Response length: 217 chars
+2024-12-17 20:32:51,365 [INFO] THERMAL EVENT - warning_low: Temperature: 19.8°C, Rate: 0.59°C/min
+2024-12-17 20:32:51,365 [INFO] Action log_event executed with result: True
+2024-12-17 20:32:51,366 [INFO] Analysis mode set to 'technical'
+Using 20s timeout for complexity level 4
+Starting AI analysis at 1734489171.3667927
+Sending prompt to Ollama:
+
+
+=== Batch Analysis at 21:04:10 ===
+1. The overall temperature trend indicates a slight increase from the average (21.0°C to 26.2°C) within the given time period, suggesting a warming trend.
+
+Batch Statistics:
+• Average: 21.0°C
+• Range: 19.0°C to 26.2°C
+• Samples: 20
+
+
+
+=== System Analysis at 21:15:30 ===
+Current State: COOLING
+Temperature: 17.5°C (-1.33°C/min)
+Range: 17.5°C to 19.6°C
+
+Component Status:
+• Heater: inactive
+• Fan: active
+• Temperature Control: out of range
+
+Engineer's Analysis:
+1. The system is operating below the target temperature range (20-25°C) and cooling rapidly, suggesting an issue with either the heating element or microcontroller control. The cooling fan might also be malfunctioning if it's running at full speed when there's no need for active cooling.
+
+
