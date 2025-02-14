@@ -1,91 +1,138 @@
-const int thermistorPin = A5;  // Analog pin connected to the thermistor
-const float setpointC = 22.5;  // Setpoint temperature in Celsius
-const float UCL = 23.5;        // Upper Control Limit (from analysis)
-const float LCL = 21.5;        // Lower Control Limit (from analysis)
+//  TRYLEN STEPHENS - ENGR-120 - CANISTER OVEN PROJECT
 
-// For analog value control limits
-const int ANALOG_UCL = 519;    // Upper Control Limit in analog
-const int ANALOG_LCL = 495;    // Lower Control Limit in analog
+//INTEGERS
 
-// LED pins
-const int red_LED = 9;
-const int green_LED = 11;
-const int blue_LED = 10;
-
-// Calibration constants
-const float TEMP_SLOPE = 0.0815;
-const float TEMP_INTERCEPT = -18.8333;
-
-String LED_STATUS = "";
-
+int tempA;
+float tempC;
+float tempF;         // Declared but not used, left as is
+float setpointC = 25.8;
+int setpointA;
+int sigma = 2; 
+int rled = 9;
+int gled = 10;
+int bled = 11;
+int heater = 7;
+int fan = 3; 
+int heaterval;
+int fanval; 
+int Stdev = 3;
+STANDARD DEVIATION
+//** PIN SETUP**//
 void setup() {
   Serial.begin(9600);
   
-  // Configure LED pins
-  pinMode(red_LED, OUTPUT);
-  pinMode(green_LED, OUTPUT);
-  pinMode(blue_LED, OUTPUT);
-  
-  // Turn off all LEDs initially
-  analogWrite(red_LED, 0);
-  analogWrite(green_LED, 0);
-  analogWrite(blue_LED, 0);
-  
-  // Print header
-  Serial.println("Analog Value, Temp (C), Temp (F), Status");
-}
+  pinMode(rled, OUTPUT); // RGB outputs
+  pinMode(gled, OUTPUT); //optional
+  pinMode(bled, OUTPUT);
+  pinMode(heater, OUTPUT);
+  pinMode(6, INPUT);
+  pinMode(fan, OUTPUT);
 
-float getTemperature(int analogValue) {
-  return (TEMP_SLOPE * analogValue) + TEMP_INTERCEPT;
-}
+  //** CALCULATIONS**//
+  setpointA = 12.2727 * setpointC + 231.136;
+  int UCLA = setpointA + 3 * sigma;
+  int LCLA = setpointA - 3 * sigma;
+  float UCLC = 0.0815 * UCLA - 18.833; // Not used further, but retained
+  float LCLC = 0.0815* LCLA - 18.833; // Not used further, but retained
 
-float celsiusToFahrenheit(float celsius) {
-  return (celsius * 9.0 / 5.0) + 32.0;
-}
-
-void updateLEDs(int analogValue, float temperature) {
-  // Clear all LEDs first
-  analogWrite(red_LED, 0);
-  analogWrite(green_LED, 0);
-  analogWrite(blue_LED, 0);
-  
-  // Use both analog and temperature values for more precise control
-  if (analogValue > ANALOG_UCL || temperature > UCL) {
-    // Too hot - Red LED
-    analogWrite(red_LED, 255);
-    LED_STATUS = "HOT";
-  } else if (analogValue < ANALOG_LCL || temperature < LCL) {
-    // Too cold - Blue LED
-    analogWrite(blue_LED, 255);
-    LED_STATUS = "COLD";
-  } else {
-    // Just right - Green LED
-    analogWrite(green_LED, 255);
-    LED_STATUS = "GOOD";
-  }
+  tempC = 0.0815 * tempA - 18.833;
+  Serial.println("    ");
+  Serial.println("    ");
+  Serial.println("    ");
+  Serial.print(UCLC);
+  Serial.println("   ");
+  Serial.print(LCLC);
+  Serial.println("   ");
 }
 
 void loop() {
-  // Read sensor value
-  int analogValue = analogRead(thermistorPin);
-  
-  // Calculate temperatures
-  float tempC = getTemperature(analogValue);
-  float tempF = celsiusToFahrenheit(tempC);
-  
-  // Update LED status based on both analog and temperature values
-  updateLEDs(analogValue, tempC);
-  
-  // Print detailed data to serial
-  Serial.print("Raw:");
-  Serial.print(analogValue);
-  Serial.print(",TC:");
-  Serial.print(tempC, 1);
-  Serial.print(",TF:");
-  Serial.print(tempF, 1);
-  Serial.print(",LED:");
-  Serial.println(LED_STATUS);
-  
-  // Wait 5 seconds between readings
-  delay(5000);
+  int UCLA = setpointA + 3 * sigma;
+  int LCLA = setpointA - 3 * sigma;
+
+  //** PRINT VALUES**//
+  String titles[7] = {"LCLA", "SP", "UCLA", "TempA", "TempC", "Heater", "Fan" };
+  for (int i = 0; i < 7; i++) {
+    Serial.print(titles[i]);
+    if (i < 6) {
+      Serial.print("    ");
+    }
+  }
+  Serial.println("");
+
+  Serial.print(LCLA); 
+  Serial.print("    "); 
+  Serial.print(setpointA); 
+  Serial.print("     "); 
+  Serial.print(UCLA); 
+  Serial.print("     "); 
+  Serial.print(tempA); 
+  Serial.print("      "); 
+  Serial.print(tempC); 
+  Serial.print("     "); 
+  Serial.print(heaterval); 
+  Serial.print("         "); 
+  Serial.print(fanval); 
+  Serial.println("   ");
+
+  if (digitalRead(6)) {
+    heaterval = 1;
+  }
+  if (!digitalRead(6)) {
+    heaterval = 0;
+  }
+  if (digitalRead(fan)) {
+    fanval = 1;
+  }
+  if (!digitalRead(fan)) {
+    fanval = 0; 
+  }
+
+  //** CALCULATE **//
+  tempA = analogRead(5);
+  tempC = 0.0944 * tempA - 22.989;
+  // tempF = (9.0 / 5.0) * tempC + 32; // Declared, but never used, left as is
+
+  // Mapping color values to temp
+  int Redmap = map(tempA, LCLA, UCLA, 0, 200);
+  int Bluemap = map(tempA, UCLA, LCLA, 255, 100);
+  //int Gmap = map(tempA, UCLA, LCLA, 255, 100);
+  //int Gmap = map(tempA, UCLA, LCLA, 0, 100);
+
+  analogWrite(rled, Redmap);
+  analogWrite(bled, Bluemap);
+
+  //** CONTROLS**//
+  if (tempA > UCLA) {
+    FanOn();
+    HeaterOff();
+    analogWrite(rled, 255);
+  }
+  if (tempA < setpointA) {
+    FanOff();
+  }
+  if (tempA < LCLA) {
+    HeaterOn();
+    analogWrite(bled, 255);
+  }
+  if (tempA = LCLA) {
+    FanOff();
+  }
+  delay(1000);
+}
+
+//** USER FUNCTIONS**//
+void FanOn() {
+  digitalWrite(fan, HIGH);
+}
+
+void FanOff() {
+  digitalWrite(fan, LOW);
+}
+
+void HeaterOn() {
+  digitalWrite(heater, HIGH);
+}
+
+void HeaterOff() {
+  digitalWrite(heater, LOW);
 }

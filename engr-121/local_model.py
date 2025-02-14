@@ -13,7 +13,7 @@ import asyncio
 from concurrent.futures import ThreadPoolExecutor
 
 class LocalModel:
-    def __init__(self, model_name="mistral"):
+    def __init__(self, model_name="llama3.1:8b-instruct-q4_0"):
         self.model_name = model_name
         
         # Baseline personality prompt for thermal monitoring
