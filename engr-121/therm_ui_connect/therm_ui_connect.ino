@@ -16,7 +16,7 @@ int fan = 3;
 int heaterval;
 int fanval; 
 int Stdev = 3;
-STANDARD DEVIATION
+
 //** PIN SETUP**//
 void setup() {
   Serial.begin(9600);
