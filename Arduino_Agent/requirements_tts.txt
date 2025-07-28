@@ -1,0 +1,21 @@
+# Requirements for Enhanced LED Assistant with Text-to-Speech
+# ========================================================
+
+# Core dependencies
+pyserial>=3.5
+speechrecognition>=3.8.1
+pyttsx3>=2.90
+
+# Optional: For better voice recognition
+pyaudio>=0.2.11
+
+# Optional: For advanced TTS features
+gTTS>=2.3.1  # Google Text-to-Speech (requires internet)
+
+# Optional: For local TTS alternatives
+espeak-ng  # System package, install via: sudo apt install espeak-ng
+
+# Development dependencies
+pytest>=6.0
+black>=21.0
+flake8>=3.8 
