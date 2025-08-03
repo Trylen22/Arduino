@@ -76,8 +76,21 @@ class EnvironmentalAgent:
                 co2_str = line.split("CO2: ")[1]
                 status["co2"] = int(co2_str)
             elif "Light:" in line:
-                light_str = line.split("Light: ")[1]
-                status["light"] = int(light_str)
+                # Parse new format: "Light: 166 (Moderate, 16% brightness)"
+                light_part = line.split("Light: ")[1]
+                if "(" in light_part and ")" in light_part:
+                    # Extract raw value, brightness description, and percentage
+                    raw_value = light_part.split(" (")[0]
+                    brightness_part = light_part.split("(")[1].split(")")[0]
+                    brightness_desc = brightness_part.split(", ")[0]
+                    brightness_percent = brightness_part.split(", ")[1].replace("% brightness", "")
+                    
+                    status["light"] = int(raw_value)
+                    status["brightness"] = brightness_desc
+                    status["light_percentage"] = int(brightness_percent)
+                else:
+                    # Fallback to old format
+                    status["light"] = int(light_part)
         
         return status
     
@@ -97,12 +110,22 @@ class EnvironmentalAgent:
             return int(co2_str)
         return None
     
-    def get_light(self) -> Optional[int]:
-        """Get light level reading only."""
+    def get_light(self) -> Optional[Dict[str, Any]]:
+        """Get light level reading with brightness interpretation."""
         response = self.send_command("P")
         if response and "LIGHT:" in response:
-            light_str = response.split("LIGHT:")[1].strip()
-            return int(light_str)
+            light_data = response.split("LIGHT:")[1].strip()
+            parts = light_data.split(",")
+            
+            if len(parts) >= 3:
+                return {
+                    "raw_value": int(parts[0]),
+                    "brightness": parts[1],
+                    "percentage": int(parts[2])
+                }
+            else:
+                # Fallback to old format
+                return {"raw_value": int(light_data)}
         return None
     
     def get_all_readings(self) -> Dict[str, Any]:
@@ -110,12 +133,23 @@ class EnvironmentalAgent:
         response = self.send_command("A")
         if response and "ALL:" in response:
             data_str = response.split("ALL:")[1].strip()
-            temp, co2, light = data_str.split(",")
-            return {
-                "temperature": float(temp),
-                "co2": int(co2),
-                "light": int(light)
-            }
+            parts = data_str.split(",")
+            
+            if len(parts) >= 5:
+                return {
+                    "temperature": float(parts[0]),
+                    "co2": int(parts[1]),
+                    "light": int(parts[2]),
+                    "brightness": parts[3],
+                    "light_percentage": int(parts[4])
+                }
+            elif len(parts) >= 3:
+                # Fallback to old format
+                return {
+                    "temperature": float(parts[0]),
+                    "co2": int(parts[1]),
+                    "light": int(parts[2])
+                }
         return {"error": "Failed to get readings"}
     
     def turn_led_on(self) -> bool:
@@ -160,11 +194,17 @@ def main():
     print("\n3. Testing individual readings...")
     temp = agent.get_temperature()
     co2 = agent.get_co2()
-    light = agent.get_light()
+    light_data = agent.get_light()
     
-    print(f"Temperature: {temp}°C")
+    print(f"Temperature: {temp}°F")
     print(f"CO2: {co2}")
-    print(f"Light: {light}")
+    if light_data and isinstance(light_data, dict):
+        if "brightness" in light_data:
+            print(f"Light: {light_data['raw_value']} ({light_data['brightness']}, {light_data['percentage']}%)")
+        else:
+            print(f"Light: {light_data['raw_value']}")
+    else:
+        print(f"Light: {light_data}")
     
     # Test all readings
     print("\n4. Testing all readings...")
