@@ -69,6 +69,8 @@ class EnvironmentalAgent:
         for line in lines:
             if "LED:" in line:
                 status["led"] = "ON" if "ON" in line else "OFF"
+            elif "Fan:" in line:
+                status["fan"] = "ON" if "ON" in line else "OFF"
             elif "Temperature:" in line:
                 temp_str = line.split("Temperature: ")[1].replace("°F", "")
                 status["temperature"] = float(temp_str)
@@ -135,7 +137,17 @@ class EnvironmentalAgent:
             data_str = response.split("ALL:")[1].strip()
             parts = data_str.split(",")
             
-            if len(parts) >= 5:
+            if len(parts) >= 7:
+                return {
+                    "temperature": float(parts[0]),
+                    "co2": int(parts[1]),
+                    "light": int(parts[2]),
+                    "brightness": parts[3],
+                    "light_percentage": int(parts[4]),
+                    "led": "ON" if parts[5] == "1" else "OFF",
+                    "fan": "ON" if parts[6] == "1" else "OFF"
+                }
+            elif len(parts) >= 5:
                 return {
                     "temperature": float(parts[0]),
                     "co2": int(parts[1]),
@@ -161,6 +173,16 @@ class EnvironmentalAgent:
         """Turn LED off."""
         response = self.send_command("L0")
         return response and "LED: OFF" in response
+    
+    def turn_fan_on(self) -> bool:
+        """Turn fan on."""
+        response = self.send_command("F1")
+        return response and "FAN: ON" in response
+    
+    def turn_fan_off(self) -> bool:
+        """Turn fan off."""
+        response = self.send_command("F0")
+        return response and "FAN: OFF" in response
     
     def close(self):
         """Close the serial connection."""

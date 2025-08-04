@@ -6,7 +6,7 @@ A sophisticated environmental monitoring system with Arduino sensors, LLM intell
 ## 🎯 Project Overview
 
 IRIS combines:
-- **Arduino sensors** (CO2, Temperature, Light, LED control)
+- **Arduino sensors** (CO2, Temperature, Light, LED control, Fan control)
 - **LLM intelligence** (Ollama integration for smart decisions)
 - **Modern voice interface** (Google TTS for natural speech)
 - **Environmental analysis** (Real-time monitoring and alerts)
@@ -18,6 +18,7 @@ IRIS-Environmental-AI/
 ├── README.md                    # This file
 ├── requirements.txt             # Python dependencies
 ├── setup.sh                    # IRIS setup script
+├── test_fan_integration.py     # Fan integration test
 ├── agents/
 │   ├── core/
 │   │   ├── environmental_agent.py
@@ -55,7 +56,13 @@ pip install -r requirements.txt
 # File: arduino/environmental_monitor_combined.ino
 ```
 
-### 3. Run IRIS System
+### 3. Test Fan Integration (Optional)
+```bash
+# Test fan control functionality
+python test_fan_integration.py
+```
+
+### 4. Run IRIS System
 ```bash
 # Run the main IRIS system
 python agents/examples/smart_environmental_ai.py
@@ -67,23 +74,27 @@ Try these voice commands:
 - "What's the temperature?"
 - "Turn on the LED"
 - "Turn off the LED"
+- "Turn on the fan"
+- "Turn off the fan"
 - "What's the environmental status?"
 - "Analyze the environment"
 - "How's the air quality?"
 
 ## 🔧 System Features
 
-### **Sensors**
+### **Sensors & Actuators**
 - **CO2 Sensor (MQ-135)** - Air quality monitoring
 - **Thermistor** - Temperature measurement (calibrated)
 - **Photoresistor** - Light level detection
 - **LED** - Visual indicator and control
+- **Fan** - Temperature control and cooling
 
 ### **Intelligence**
 - **LLM Integration** - Ollama with llama3.1:8b-instruct-q4_0
 - **Smart Analysis** - Environmental condition assessment
 - **Voice Interface** - Google TTS for natural speech
 - **Command Processing** - Natural language understanding
+- **Automatic Control** - Smart LED and fan control based on conditions
 
 ## 📊 Environmental Analysis
 

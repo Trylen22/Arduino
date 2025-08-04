@@ -7,6 +7,7 @@ This sketch combines all your working circuits:
 - Thermistor temperature sensor (A5) 
 - Photoresistor light sensor (A2)
 - LED indicator (pin 3)
+- Fan control (pin 4)
 
 Simple serial interface for LLM agent control.
 
@@ -19,6 +20,7 @@ const int CO2_PIN = A0;           // MQ-135 CO2 sensor
 const int THERMISTOR_PIN = A5;     // Thermistor temperature sensor
 const int PHOTO_PIN = A2;          // Photoresistor light sensor
 const int LED_PIN = 3;             // LED indicator
+const int FAN_PIN = 4;             // Fan control
 
 // Thermistor calibration (your improved equation)
 const float TEMP_COEFF = 0.0916;
@@ -31,20 +33,29 @@ const int LIGHT_MODERATE = 600;    // Below this = moderate
 const int LIGHT_BRIGHT = 800;      // Below this = bright
 // Above 800 = very bright
 
+// Temperature thresholds for automatic fan control
+const float TEMP_HOT = 80.0;       // Turn fan on above this temperature
+const float TEMP_COOL = 75.0;      // Turn fan off below this temperature
+
 // Global variables
 bool led_state = false;
+bool fan_state = false;
 String inputString = "";
 bool stringComplete = false;
 
 void setup() {
   Serial.begin(9600);
   pinMode(LED_PIN, OUTPUT);
+  pinMode(FAN_PIN, OUTPUT);
   digitalWrite(LED_PIN, LOW);
+  digitalWrite(FAN_PIN, LOW);
   
   Serial.println("Environmental Monitor Ready!");
   Serial.println("Available commands:");
   Serial.println("  'L1' - Turn LED ON");
   Serial.println("  'L0' - Turn LED OFF");
+  Serial.println("  'F1' - Turn Fan ON");
+  Serial.println("  'F0' - Turn Fan OFF");
   Serial.println("  'S' - Status report (all sensors)");
   Serial.println("  'T' - Temperature only");
   Serial.println("  'C' - CO2 only");
@@ -83,6 +94,10 @@ void processCommand(String command) {
     turnLEDOn();
   } else if (command == "L0") {
     turnLEDOff();
+  } else if (command == "F1") {
+    turnFanOn();
+  } else if (command == "F0") {
+    turnFanOff();
   } else if (command == "S") {
     sendStatusReport();
   } else if (command == "T") {
@@ -109,6 +124,19 @@ void turnLEDOff() {
   digitalWrite(LED_PIN, LOW);
   led_state = false;
   Serial.println("LED: OFF");
+}
+
+// Fan control functions
+void turnFanOn() {
+  digitalWrite(FAN_PIN, HIGH);
+  fan_state = true;
+  Serial.println("FAN: ON");
+}
+
+void turnFanOff() {
+  digitalWrite(FAN_PIN, LOW);
+  fan_state = false;
+  Serial.println("FAN: OFF");
 }
 
 // Sensor reading functions
@@ -168,6 +196,8 @@ void sendStatusReport() {
   Serial.println("=== STATUS REPORT ===");
   Serial.print("LED: ");
   Serial.println(led_state ? "ON" : "OFF");
+  Serial.print("Fan: ");
+  Serial.println(fan_state ? "ON" : "OFF");
   Serial.print("Temperature: ");
   Serial.print(temp, 1);
   Serial.println("°F");
@@ -224,5 +254,9 @@ void sendAllReadings() {
   Serial.print(",");
   Serial.print(brightness);
   Serial.print(",");
-  Serial.println(lightPercent);
+  Serial.print(lightPercent);
+  Serial.print(",");
+  Serial.print(led_state ? "1" : "0");
+  Serial.print(",");
+  Serial.println(fan_state ? "1" : "0");
 } 

@@ -49,6 +49,8 @@ class IRISEnvironmentalAI:
         self.action_handlers = {
             "turn_led_on": self._handle_turn_led_on,
             "turn_led_off": self._handle_turn_led_off,
+            "turn_fan_on": self._handle_turn_fan_on,
+            "turn_fan_off": self._handle_turn_fan_off,
             "status": self._handle_status,
             "analyze": self._handle_analyze,
             "get_temperature": self._handle_get_temperature,
@@ -74,6 +76,20 @@ class IRISEnvironmentalAI:
         success = self.agent.turn_led_off()
         if success:
             self.voice.speak("I've turned the LED off.")
+        return success
+    
+    def _handle_turn_fan_on(self) -> bool:
+        """Handle turning fan on."""
+        success = self.agent.turn_fan_on()
+        if success:
+            self.voice.speak("I've turned the fan on.")
+        return success
+    
+    def _handle_turn_fan_off(self) -> bool:
+        """Handle turning fan off."""
+        success = self.agent.turn_fan_off()
+        if success:
+            self.voice.speak("I've turned the fan off.")
         return success
     
     def _handle_status(self) -> bool:
@@ -222,6 +238,7 @@ Example response:
         brightness = status.get('brightness', 'Unknown')
         light_percent = status.get('light_percentage', 'N/A')
         led = status.get('led', 'N/A')
+        fan = status.get('fan', 'N/A')
         
         # Format light information
         if brightness != 'Unknown' and light_percent != 'N/A':
@@ -235,10 +252,13 @@ Current Environmental Data:
 - CO2 Level: {co2} (raw value)
 - Light Level: {light_info}
 - LED Status: {led}
+- Fan Status: {fan}
 
 Available Actions:
 - turn_led_on: Turn LED ON
 - turn_led_off: Turn LED OFF
+- turn_fan_on: Turn Fan ON
+- turn_fan_off: Turn Fan OFF
 - status: Get current sensor readings
 - analyze: Comprehensive environmental analysis
 - get_temperature: Get temperature-specific information
@@ -284,13 +304,15 @@ Respond only with the JSON object:"""
                     light_raw = status.get('light', 0)
                     brightness = status.get('brightness', 'Unknown')
                     led = status.get('led', 'OFF')
+                    fan = status.get('fan', 'OFF') # Get fan status
                     
                     # Update smart monitor
                     current_values = {
                         'temperature': temp,
                         'co2': co2,
                         'light': light_raw,
-                        'led': led
+                        'led': led,
+                        'fan': fan  # Add fan status
                     }
                     self.smart_monitor.update_last_values(current_values)
                     
@@ -333,6 +355,12 @@ Respond only with the JSON object:"""
                     print(self.smart_monitor.get_recent_actions())
                     print("="*60)
                     
+                    # Automatic LED control based on lighting conditions
+                    self._perform_automatic_led_control(brightness, light_raw, led)
+                    
+                    # Automatic fan control based on temperature
+                    self._perform_automatic_fan_control(temp, fan)
+                    
                 else:
                     self.voice.speak("I can't access the sensors right now.")
                     self.smart_monitor.log_action("Error", "Arduino sensors not responding")
@@ -342,6 +370,53 @@ Respond only with the JSON object:"""
         except KeyboardInterrupt:
             print("\n🛑 Intelligent monitoring stopped by user")
             self.voice.speak("I've stopped the intelligent system.")
+    
+    def _perform_automatic_led_control(self, brightness: str, light_raw: int, led: str):
+        """Perform automatic LED control based on lighting conditions."""
+        if brightness != 'Unknown':
+            match brightness:
+                case 'Very Dark' | 'Dark':
+                    if led == 'OFF':
+                        self.agent.turn_led_on()
+                        self.voice.speak("I've turned on the LED to improve lighting.")
+                        self.smart_monitor.log_action("Auto LED Control", "LED turned ON for poor lighting")
+                case 'Very Bright':
+                    if led == 'ON':
+                        self.agent.turn_led_off()
+                        self.voice.speak("I've turned off the LED - lighting is adequate.")
+                        self.smart_monitor.log_action("Auto LED Control", "LED turned OFF - lighting adequate")
+                case _:
+                    if led == 'ON':
+                        self.agent.turn_led_off()
+                        self.smart_monitor.log_action("Auto LED Control", "LED turned OFF - lighting adequate")
+        else:
+            # Fallback to raw value analysis
+            if light_raw < 200:  # Very low light
+                if led == 'OFF':
+                    self.agent.turn_led_on()
+                    self.voice.speak("I've turned on the LED to improve lighting.")
+                    self.smart_monitor.log_action("Auto LED Control", "LED turned ON for poor lighting")
+            elif light_raw > 800:  # Very bright
+                if led == 'ON':
+                    self.agent.turn_led_off()
+                    self.voice.speak("I've turned off the LED - lighting is adequate.")
+                    self.smart_monitor.log_action("Auto LED Control", "LED turned OFF - lighting adequate")
+            elif light_raw >= 200 and light_raw <= 800 and led == 'ON':
+                self.agent.turn_led_off()
+                self.smart_monitor.log_action("Auto LED Control", "LED turned OFF - lighting adequate")
+    
+    def _perform_automatic_fan_control(self, temp: float, fan: str):
+        """Perform automatic fan control based on temperature."""
+        if temp > 80:  # High temperature - turn fan on
+            if fan == 'OFF':
+                self.agent.turn_fan_on()
+                self.voice.speak("I've turned on the fan to cool down the environment.")
+                self.smart_monitor.log_action("Auto Fan Control", "Fan turned ON for high temperature")
+        elif temp < 75:  # Cool temperature - turn fan off
+            if fan == 'ON':
+                self.agent.turn_fan_off()
+                self.voice.speak("I've turned off the fan - temperature is comfortable.")
+                self.smart_monitor.log_action("Auto Fan Control", "Fan turned OFF - temperature comfortable")
     
     def run_interactive_mode(self):
         """Run interactive mode with voice and text commands."""
@@ -357,6 +432,8 @@ Respond only with the JSON object:"""
                 print("Try these commands:")
                 print("- 'What's the temperature?'")
                 print("- 'Turn on the LED'")
+                print("- 'Turn on the fan'")
+                print("- 'Turn off the fan'")
                 print("- 'Analyze the environment'")
                 print("- 'How's the air quality?'")
                 print("="*60)
@@ -379,6 +456,22 @@ Respond only with the JSON object:"""
                     break
                 else:
                     print("❌ Invalid choice. Please try again.")
+                
+                # Automatic LED control in interactive mode
+                status = self.agent.get_status()
+                if "error" not in status:
+                    temp = status.get('temperature', 0)
+                    co2 = status.get('co2', 0)
+                    light_raw = status.get('light', 0)
+                    brightness = status.get('brightness', 'Unknown')
+                    led = status.get('led', 'OFF')
+                    fan = status.get('fan', 'OFF') # Get fan status
+                    
+                    # Perform automatic LED control
+                    self._perform_automatic_led_control(brightness, light_raw, led)
+                    
+                    # Perform automatic fan control
+                    self._perform_automatic_fan_control(temp, fan)
         
         except KeyboardInterrupt:
             print("\n🛑 Interactive mode stopped by user")
