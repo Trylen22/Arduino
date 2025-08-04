@@ -27,7 +27,7 @@ class SmartMonitor:
         self.summary_interval = 300  # 5 minutes
         self.last_summary_time = 0
         self.emergency_conditions = {
-            'temperature': {'min': 50, 'max': 95},
+            'temperature': {'min': 50, 'max': 80},  # Changed from 95 to 80
             'co2': {'max': 2000},
             'light': {'min': 50}
         }

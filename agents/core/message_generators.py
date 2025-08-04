@@ -50,7 +50,7 @@ class MessageGenerators:
         # Temperature analysis
         if temp < 60:
             analysis_parts.append("It's quite cold.")
-        elif temp > 86:
+        elif temp > 80:  # Changed from 86 to 80
             analysis_parts.append("It's quite warm.")
         else:
             analysis_parts.append("The temperature is comfortable.")
@@ -82,7 +82,7 @@ class MessageGenerators:
             temp_num = float(temp)
             if temp_num < 60:
                 message += " It's cold."
-            elif temp_num > 86:
+            elif temp_num > 80:
                 message += " It's warm."
             else:
                 message += " Temperature is comfortable."
@@ -147,7 +147,7 @@ class MessageGenerators:
         # Temperature recommendations
         if temp < 60:
             recommendations.append("Increase temperature for comfort.")
-        elif temp > 86:
+        elif temp > 80:
             recommendations.append("Decrease temperature for comfort.")
         
         # CO2 recommendations
@@ -231,7 +231,7 @@ class MessageGenerators:
         # Temperature summary
         if temp < 60:
             summary_parts.append("temperature cool")
-        elif temp > 86:
+        elif temp > 80:
             summary_parts.append("temperature warm")
         else:
             summary_parts.append("temperature comfortable")
