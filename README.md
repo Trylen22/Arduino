@@ -1,11 +1,11 @@
-# Environmental Monitoring System
-================================
+# IRIS Environmental AI
+======================
 
 A sophisticated environmental monitoring system with Arduino sensors, LLM intelligence, and modern voice interface.
 
 ## 🎯 Project Overview
 
-This system combines:
+IRIS combines:
 - **Arduino sensors** (CO2, Temperature, Light, LED control)
 - **LLM intelligence** (Ollama integration for smart decisions)
 - **Modern voice interface** (Google TTS for natural speech)
@@ -14,43 +14,28 @@ This system combines:
 ## 📁 Project Structure
 
 ```
-Arduino_Agent/
-├── README.md                           # This file
-├── requirements.txt                    # Python dependencies
-├── setup.sh                          # Quick setup script
-│
-├── arduino/                          # Arduino code
-│   ├── environmental_monitor_combined.ino  # Main Arduino sketch
-│   ├── simple_tests/                 # Individual sensor tests
-│   └── legacy/                       # Old/experimental code
-│
-├── agents/                           # Python agents
-│   ├── core/                         # Core agent classes
-│   │   ├── environmental_agent.py    # Base environmental agent
-│   │   ├── intelligent_agent.py      # LLM-powered agent
-│   │   └── voice_agent.py           # Voice-enabled agent
-│   │
-│   │   ├── interfaces/               # Interface modules
-│   │   ├── voice_interface.py       # Voice/TTS interface
-│   │   ├── llm_interface.py         # LLM query interface
-│   │   └── modern_voice_interface.py # Modern TTS interface
-│   │
-│   │   └── examples/                 # Example implementations
-│   │   ├── voice_environmental_agent_modern.py  # Main modern agent
-│   │   └── interactive_environmental_agent.py   # Interactive agent
-│
-├── tools/                            # Utility tools
-│   ├── voice_selector.py            # Voice testing tool
-│   ├── test_voice_quality.py        # Voice quality tester
-│   └── set_preferred_voice.py       # Voice configuration
-│
-├── docs/                             # Documentation
-│   ├── CIRCUIT_TESTING_GUIDE.md     # Hardware setup guide
-│   ├── system_improvements.md        # Future improvements
-│   └── TTS_QUICK_START.md          # Voice setup guide
-│
-└── config/                           # Configuration files
-    └── settings.json                 # System settings
+IRIS-Environmental-AI/
+├── README.md                    # This file
+├── requirements.txt             # Python dependencies
+├── setup.sh                    # IRIS setup script
+├── agents/
+│   ├── core/
+│   │   ├── environmental_agent.py
+│   │   ├── smart_monitor.py
+│   │   └── message_generators.py
+│   ├── interfaces/
+│   │   ├── llm_interface.py
+│   │   └── modern_voice_interface.py
+│   └── examples/
+│       ├── smart_environmental_ai.py    # Main IRIS system
+│       └── voice_environmental_agent_modern_refactored.py
+├── arduino/
+│   ├── environmental_monitor_combined.ino
+│   └── simple_tests/
+├── docs/
+│   └── IRIS_DEMO_GUIDE.md
+└── tools/
+    └── voice_selector.py
 ```
 
 ## 🚀 Quick Start
@@ -70,10 +55,10 @@ pip install -r requirements.txt
 # File: arduino/environmental_monitor_combined.ino
 ```
 
-### 3. Run the System
+### 3. Run IRIS System
 ```bash
-# Run the modern voice-enabled agent
-python agents/examples/voice_environmental_agent_modern.py
+# Run the main IRIS system
+python agents/examples/smart_environmental_ai.py
 ```
 
 ## 🎤 Voice Commands
@@ -100,12 +85,6 @@ Try these voice commands:
 - **Voice Interface** - Google TTS for natural speech
 - **Command Processing** - Natural language understanding
 
-### **Voice Quality**
-- **Modern TTS** - Google Text-to-Speech
-- **Natural Speech** - No letter-by-letter spelling
-- **Professional Quality** - Clear, human-like voice
-- **Emotional Responses** - Context-aware voice feedback
-
 ## 📊 Environmental Analysis
 
 The system provides:
@@ -126,11 +105,6 @@ The system provides:
 - Use `tools/voice_selector.py` to test different voices
 - Modify `agents/interfaces/modern_voice_interface.py` for voice settings
 - Test with `tools/test_voice_quality.py`
-
-### **LLM Enhancements**
-- Update prompts in agent files
-- Modify `agents/interfaces/llm_interface.py` for different models
-- Test with `agents/examples/interactive_environmental_agent.py`
 
 ## 🔄 System Architecture
 
@@ -163,13 +137,7 @@ python tools/set_preferred_voice.py
 ### **Arduino Connection**
 ```bash
 # Check connection
-python agents/examples/interactive_environmental_agent.py
-```
-
-### **LLM Issues**
-```bash
-# Test LLM connection
-python agents/examples/intelligent_environmental_agent.py
+python agents/examples/smart_environmental_ai.py
 ```
 
 ## 📝 License
@@ -185,4 +153,4 @@ This project is open source. Feel free to modify and improve!
 
 ---
 
-**Happy environmental monitoring! 🌍✨** 
+**Happy environmental monitoring! 🌍✨**

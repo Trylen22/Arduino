@@ -1,12 +1,12 @@
 /*
-Simple Fan Test
-===============
+Simple Fan Test - Pin 4
+=======================
 
-Basic test for fan control on pin 8.
+Basic test for fan control on pin 4.
 Just turns fan on and off with serial feedback.
 
 Wiring:
-- Transistor base to pin 8 through 1kΩ resistor
+- Transistor base to pin 4 through 1kΩ resistor
 - Transistor collector to fan positive
 - Transistor emitter to GND
 - Fan negative to GND

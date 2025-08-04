@@ -31,8 +31,8 @@ class ModernVoiceEnvironmentalAgent:
             print("❌ Cannot initialize without Arduino connection")
             return
         
-        print("🤖 Modern Voice-Enabled Environmental Agent Ready!")
-        print(f"🎤 Using {self.voice.voice_type} voice model for excellent quality!")
+        print(" Modern Voice-Enabled Environmental Agent Ready!")
+        print(f" Using {self.voice.voice_type} voice model for excellent quality!")
         print("I can analyze sensor data and respond with professional voice feedback.")
         self.voice.speak("Modern voice-enabled environmental monitoring system ready!")
     
@@ -59,14 +59,22 @@ Example response:
         # Create environmental context
         temp = status.get('temperature', 'N/A')
         co2 = status.get('co2', 'N/A')
-        light = status.get('light', 'N/A')
+        light_raw = status.get('light', 'N/A')
+        brightness = status.get('brightness', 'Unknown')
+        light_percent = status.get('light_percentage', 'N/A')
         led = status.get('led', 'N/A')
+        
+        # Format light information
+        if brightness != 'Unknown' and light_percent != 'N/A':
+            light_info = f"{light_raw} ({brightness}, {light_percent}% brightness)"
+        else:
+            light_info = f"{light_raw} (raw value)"
         
         environmental_context = f"""
 Current Environmental Data:
 - Temperature: {temp}°F
 - CO2 Level: {co2} (raw value)
-- Light Level: {light} (raw value)
+- Light Level: {light_info}
 - LED Status: {led}
 
 Available Actions:
@@ -98,7 +106,7 @@ Respond only with the JSON object:"""
     
     def process_voice_command(self, user_input: str):
         """Process a voice command using LLM intelligence and modern TTS feedback."""
-        print(f"\n🔄 Processing: {user_input}")
+        print(f"\n Processing: {user_input}")
         
         # Generate LLM prompt
         prompt = self.generate_environmental_prompt(user_input)
@@ -113,8 +121,8 @@ Respond only with the JSON object:"""
             explanation = llm_response.get('explanation', '')
             analysis = llm_response.get('analysis', '')
             
-            print(f"🤖 LLM Action: {action}")
-            print(f"💡 Explanation: {explanation}")
+            print(f" LLM Action: {action}")
+            print(f" Explanation: {explanation}")
             
             # Speak the response with modern voice
             self.voice.speak(response_text)
@@ -147,10 +155,18 @@ Respond only with the JSON object:"""
                 if "error" not in status:
                     temp = status.get('temperature', 'N/A')
                     co2 = status.get('co2', 'N/A')
-                    light = status.get('light', 'N/A')
+                    light_raw = status.get('light', 'N/A')
+                    brightness = status.get('brightness', 'Unknown')
+                    light_percent = status.get('light_percentage', 'N/A')
                     led = status.get('led', 'N/A')
                     
-                    status_message = f"Current status: Temperature is {temp} degrees Fahrenheit, CO2 level is {co2}, light level is {light}, and the LED is {led}."
+                    # Format light information
+                    if brightness != 'Unknown' and light_percent != 'N/A':
+                        light_info = f"{light_raw} ({brightness}, {light_percent}% brightness)"
+                    else:
+                        light_info = f"{light_raw}"
+                    
+                    status_message = f"Current status: Temperature is {temp} degrees Fahrenheit, CO2 level is {co2}, light level is {light_info}, and the LED is {led}."
                     self.voice.speak(status_message)
                     return True
                 else:
@@ -163,7 +179,9 @@ Respond only with the JSON object:"""
                 if "error" not in status:
                     temp = status.get('temperature', 0)
                     co2 = status.get('co2', 0)
-                    light = status.get('light', 0)
+                    light_raw = status.get('light', 0)
+                    brightness = status.get('brightness', 'Unknown')
+                    light_percent = status.get('light_percentage', 0)
                     
                     analysis_message = f"Environmental analysis: Temperature is {temp} degrees Fahrenheit. "
                     
@@ -181,12 +199,22 @@ Respond only with the JSON object:"""
                     else:
                         analysis_message += "Air quality appears good. "
                     
-                    if light < 100:
-                        analysis_message += "The lighting is quite dim. "
-                    elif light > 800:
-                        analysis_message += "The lighting is very bright. "
+                    # Use brightness description for better analysis
+                    if brightness != 'Unknown':
+                        if brightness in ['Very Dark', 'Dark']:
+                            analysis_message += f"The lighting is {brightness.lower()}, you might need more light. "
+                        elif brightness in ['Very Bright']:
+                            analysis_message += f"The lighting is {brightness.lower()}, it might be too bright. "
+                        else:
+                            analysis_message += f"The lighting is {brightness.lower()}, which is adequate. "
                     else:
-                        analysis_message += "The lighting is adequate. "
+                        # Fallback to raw value analysis
+                        if light_raw < 100:
+                            analysis_message += "The lighting is quite dim. "
+                        elif light_raw > 800:
+                            analysis_message += "The lighting is very bright. "
+                        else:
+                            analysis_message += "The lighting is adequate. "
                     
                     self.voice.speak(analysis_message)
                     return True
@@ -222,7 +250,7 @@ Respond only with the JSON object:"""
                 print("="*60)
                 
                 # Get user input method
-                choice = input("\nChoose input method:\n1. Voice command\n2. Text command\n3. Continuous monitoring\n4. Exit\nEnter choice (1-4): ").strip()
+                choice = input("\nChoose input method:\n1. Voice command\n2. Text command\n3. Continuous monitoring\n4. Intelligent decision system (analyze & recommend)\n5. Exit\nEnter choice (1-5): ").strip()
                 
                 if choice == '1':
                     # Voice input
@@ -249,6 +277,10 @@ Respond only with the JSON object:"""
                         self.run_continuous_voice_monitoring(30)
                         
                 elif choice == '4':
+                    # Intelligent decision system
+                    self.run_intelligent_decision_system()
+                    
+                elif choice == '5':
                     break
                     
                 else:
@@ -268,7 +300,7 @@ Respond only with the JSON object:"""
         try:
             while True:
                 print("\n" + "="*50)
-                print(f"📊 Environmental Check - {time.strftime('%H:%M:%S')}")
+                print(f" Environmental Check - {time.strftime('%H:%M:%S')}")
                 
                 # Get environmental status
                 status = self.agent.get_status()
@@ -276,13 +308,15 @@ Respond only with the JSON object:"""
                 if "error" not in status:
                     temp = status.get('temperature', 0)
                     co2 = status.get('co2', 0)
-                    light = status.get('light', 0)
+                    light_raw = status.get('light', 0)
+                    brightness = status.get('brightness', 'Unknown')
+                    light_percent = status.get('light_percentage', 0)
                     led = status.get('led', 'OFF')
                     
-                    print(f"🌡️  Temperature: {temp}°F")
-                    print(f"💨 CO2: {co2}")
-                    print(f"💡 Light: {light}")
-                    print(f"🔴 LED: {led}")
+                    print(f"  Temperature: {temp}°F")
+                    print(f" CO2: {co2}")
+                    print(f" Light: {light_raw}")
+                    print(f" LED: {led}")
                     
                     # Voice announcement for significant changes
                     if temp < 60:
@@ -293,14 +327,143 @@ Respond only with the JSON object:"""
                     if co2 > 1000:
                         self.voice.speak("Warning: CO2 levels are high, indicating poor ventilation.")
                     
-                    if light < 100:
-                        self.voice.speak("Notice: Lighting is quite dim.")
+                    # Use brightness description for voice announcements
+                    if brightness != 'Unknown':
+                        if brightness in ['Very Dark', 'Dark']:
+                            self.voice.speak(f"Notice: Lighting is {brightness.lower()}, you might need more light.")
+                        elif brightness in ['Very Bright']:
+                            self.voice.speak(f"Notice: Lighting is {brightness.lower()}, it might be too bright.")
+                    else:
+                        if light_raw < 100:
+                            self.voice.speak("Notice: Lighting is quite dim.")
                 
                 time.sleep(interval)
                 
         except KeyboardInterrupt:
             print("\n🛑 Continuous monitoring stopped by user")
             self.voice.speak("Continuous monitoring stopped.")
+    
+    def run_intelligent_decision_system(self):
+        """Run the intelligent decision system for continuous monitoring and recommendations."""
+        print("\n🧠 Intelligent Decision System (Press Ctrl+C to exit)")
+        print("--------------------------------------------------")
+        while True:
+            try:
+                print("\n" + "="*50)
+                print(f" Environmental Check - {time.strftime('%H:%M:%S')}")
+                
+                # Get environmental status
+                status = self.agent.get_status()
+                
+                if "error" not in status:
+                    temp = status.get('temperature', 0)
+                    co2 = status.get('co2', 0)
+                    light_raw = status.get('light', 0)
+                    brightness = status.get('brightness', 'Unknown')
+                    light_percent = status.get('light_percentage', 0)
+                    led = status.get('led', 'OFF')
+                    
+                    print(f"  Temperature: {temp}°F")
+                    print(f" CO2: {co2}")
+                    print(f" Light: {light_raw}")
+                    print(f" LED: {led}")
+                    
+                    # Voice announcement for significant changes
+                    if temp < 60:
+                        self.voice.speak(f"Warning: Temperature is {temp} degrees, which is quite cold.")
+                    elif temp > 86:
+                        self.voice.speak(f"Warning: Temperature is {temp} degrees, which is quite warm.")
+                    
+                    if co2 > 1000:
+                        self.voice.speak("Warning: CO2 levels are high, indicating poor ventilation.")
+                    
+                    # Use brightness description for voice announcements
+                    if brightness != 'Unknown':
+                        if brightness in ['Very Dark', 'Dark']:
+                            self.voice.speak(f"Notice: Lighting is {brightness.lower()}, you might need more light.")
+                        elif brightness in ['Very Bright']:
+                            self.voice.speak(f"Notice: Lighting is {brightness.lower()}, it might be too bright.")
+                    else:
+                        if light_raw < 100:
+                            self.voice.speak("Notice: Lighting is quite dim.")
+                    
+                    # Analyze and provide recommendations
+                    analysis_message = ""
+                    actions_taken = []
+                    
+                    if temp < 60:
+                        analysis_message += "It's quite cold. You might want to increase the temperature. "
+                    elif temp > 86:
+                        analysis_message += "It's quite warm. You might want to decrease the temperature. "
+                    else:
+                        analysis_message += "The temperature is comfortable. "
+                    
+                    if co2 > 1000:
+                        analysis_message += "CO2 levels are high, indicating poor ventilation. You might need to open windows or use a fan. "
+                    elif co2 > 800:
+                        analysis_message += "CO2 levels are moderate. Air quality is good. "
+                    else:
+                        analysis_message += "Air quality appears good. "
+                    
+                    # Automatic LED control based on lighting conditions
+                    if brightness != 'Unknown':
+                        if brightness in ['Very Dark', 'Dark']:
+                            analysis_message += f"The lighting is {brightness.lower()}, you might need more light. "
+                            # Auto-turn on LED for poor lighting
+                            if led == 'OFF':
+                                self.agent.turn_led_on()
+                                actions_taken.append("LED turned ON automatically for poor lighting")
+                                analysis_message += "I've turned on the LED to help with the lighting. "
+                        elif brightness in ['Very Bright']:
+                            analysis_message += f"The lighting is {brightness.lower()}, it might be too bright. "
+                            # Auto-turn off LED if too bright
+                            if led == 'ON':
+                                self.agent.turn_led_off()
+                                actions_taken.append("LED turned OFF automatically - lighting is adequate")
+                                analysis_message += "I've turned off the LED since the lighting is already bright. "
+                        else:
+                            analysis_message += f"The lighting is {brightness.lower()}, which is adequate. "
+                            # Turn off LED if lighting is adequate
+                            if led == 'ON':
+                                self.agent.turn_led_off()
+                                actions_taken.append("LED turned OFF automatically - lighting is adequate")
+                                analysis_message += "I've turned off the LED since the lighting is adequate. "
+                    else:
+                        # Fallback to raw value analysis
+                        if light_raw < 100:
+                            analysis_message += "The lighting is quite dim. "
+                            if led == 'OFF':
+                                self.agent.turn_led_on()
+                                actions_taken.append("LED turned ON automatically for poor lighting")
+                                analysis_message += "I've turned on the LED to help with the lighting. "
+                        elif light_raw > 800:
+                            analysis_message += "The lighting is very bright. "
+                            if led == 'ON':
+                                self.agent.turn_led_off()
+                                actions_taken.append("LED turned OFF automatically - lighting is adequate")
+                                analysis_message += "I've turned off the LED since the lighting is already bright. "
+                        else:
+                            analysis_message += "The lighting is adequate. "
+                            if led == 'ON':
+                                self.agent.turn_led_off()
+                                actions_taken.append("LED turned OFF automatically - lighting is adequate")
+                                analysis_message += "I've turned off the LED since the lighting is adequate. "
+                    
+                    # Show actions taken in console
+                    if actions_taken:
+                        print(f"🤖 Actions taken: {', '.join(actions_taken)}")
+                    
+                    self.voice.speak(analysis_message)
+                    
+                else:
+                    self.voice.speak("Error getting status from Arduino.")
+                    
+                time.sleep(1) # Check every second
+                
+            except KeyboardInterrupt:
+                print("\n🛑 Intelligent decision system stopped by user")
+                self.voice.speak("Intelligent decision system stopped.")
+                break
     
     def close(self):
         """Close the agent and clean up resources."""

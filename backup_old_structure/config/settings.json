@@ -1,0 +1,27 @@
+{
+    "arduino": {
+        "port": "/dev/ttyACM0",
+        "baud_rate": 9600
+    },
+    "llm": {
+        "model": "llama3.1:8b-instruct-q4_0",
+        "timeout": 30
+    },
+    "voice": {
+        "model": "gtts",
+        "rate": 150,
+        "volume": 0.9,
+        "microphone_index": 9
+    },
+    "sensors": {
+        "co2_pin": "A0",
+        "thermistor_pin": "A5",
+        "photoresistor_pin": "A2",
+        "led_pin": 3,
+        "fan_pin": 8
+    },
+    "calibration": {
+        "thermistor_coefficient": 0.0916,
+        "thermistor_offset": -22.8683
+    }
+}
