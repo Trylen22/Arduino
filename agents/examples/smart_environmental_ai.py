@@ -8,11 +8,24 @@ Uses extracted components for maintainable, modular code.
 """
 
 import time
+import sys
+import os
 from typing import Dict, Any, Callable
 
-# Import from the agents package
-from ..core import EnvironmentalAgent, SmartMonitor, MessageGenerators
-from ..interfaces import ModernVoiceInterface, LLMInterface
+# Handle imports for both direct execution and package import
+try:
+    # Try relative imports first (when run as package)
+    from ..core import EnvironmentalAgent, SmartMonitor, MessageGenerators
+    from ..interfaces import ModernVoiceInterface, LLMInterface
+except ImportError:
+    # Fallback to absolute imports (when run directly)
+    sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'core'))
+    sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'interfaces'))
+    from environmental_agent import EnvironmentalAgent
+    from smart_monitor import SmartMonitor
+    from message_generators import MessageGenerators
+    from modern_voice_interface import ModernVoiceInterface
+    from llm_interface import LLMInterface
 
 
 class IRISEnvironmentalAI:
