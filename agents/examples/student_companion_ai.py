@@ -44,7 +44,7 @@ class IRISStudentCompanionAI:
         
         # Initialize speech recognition
         self.recognizer = sr.Recognizer()
-        self.microphone = sr.Microphone()
+        self.microphone = sr.Microphone(device_index=9)  # Use HyperX SoloCast
         
         if not self.agent.connected:
             print("❌ Cannot initialize without Arduino connection")
@@ -74,15 +74,24 @@ class IRISStudentCompanionAI:
     def get_voice_input(self) -> str:
         """Get voice input from the user."""
         try:
-            with self.microphone as source:
-                print("Listening... (speak now)")
-                self.recognizer.adjust_for_ambient_noise(source, duration=0.5)
-                audio = self.recognizer.listen(source, timeout=5, phrase_time_limit=10)
-                
-            print("Processing speech...")
-            text = self.recognizer.recognize_google(audio)
-            print(f"You said: {text}")
-            return text.lower().strip()
+            # Suppress audio system messages
+            import os
+            import sys
+            from contextlib import redirect_stderr
+            from io import StringIO
+            
+            # Redirect stderr to suppress audio messages
+            stderr_capture = StringIO()
+            with redirect_stderr(stderr_capture):
+                with self.microphone as source:
+                    print("Listening... (speak now)")
+                    self.recognizer.adjust_for_ambient_noise(source, duration=0.5)
+                    audio = self.recognizer.listen(source, timeout=5, phrase_time_limit=10)
+                    
+                print("Processing speech...")
+                text = self.recognizer.recognize_google(audio)
+                print(f"You said: {text}")
+                return text.lower().strip()
             
         except sr.WaitTimeoutError:
             print("No speech detected. Please try again.")
@@ -334,6 +343,15 @@ class IRISStudentCompanionAI:
                     self._handle_status()
                 elif user_input == 'analyze':
                     self._handle_analyze()
+                # Natural language commands
+                elif any(word in user_input for word in ['turn on light', 'turn on the light', 'light on', 'turn on led']):
+                    self._handle_turn_led_on()
+                elif any(word in user_input for word in ['turn off light', 'turn off the light', 'light off', 'turn off led']):
+                    self._handle_turn_led_off()
+                elif any(word in user_input for word in ['turn on fan', 'turn on the fan', 'fan on']):
+                    self._handle_turn_fan_on()
+                elif any(word in user_input for word in ['turn off fan', 'turn off the fan', 'fan off']):
+                    self._handle_turn_fan_off()
                 else:
                     # Process as natural conversation
                     self.process_student_input(user_input)

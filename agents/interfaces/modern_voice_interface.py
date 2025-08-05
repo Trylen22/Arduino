@@ -149,13 +149,19 @@ class ModernVoiceInterface:
         """Setup microphone and speech recognition."""
         self.recognizer = sr.Recognizer()
         try:
-            self.microphone = sr.Microphone(device_index=self.microphone_index)
+            # Suppress audio system messages
+            from contextlib import redirect_stderr
+            from io import StringIO
             
-            with self.microphone as source:
-                self.recognizer.adjust_for_ambient_noise(source, duration=2)
-                self.recognizer.energy_threshold = 800
-                self.recognizer.dynamic_energy_threshold = True
-                self.recognizer.pause_threshold = 0.6
+            stderr_capture = StringIO()
+            with redirect_stderr(stderr_capture):
+                self.microphone = sr.Microphone(device_index=self.microphone_index)
+                
+                with self.microphone as source:
+                    self.recognizer.adjust_for_ambient_noise(source, duration=2)
+                    self.recognizer.energy_threshold = 800
+                    self.recognizer.dynamic_energy_threshold = True
+                    self.recognizer.pause_threshold = 0.6
             print("✅ Enhanced microphone test successful!")
         except Exception as e:
             print(f"❌ Error initializing microphone: {e}")
@@ -296,23 +302,29 @@ class ModernVoiceInterface:
             return None
 
         try:
-            with self.microphone as source:
-                self.speak_quiet("Listening...")
-                print("\n👂 Listening... (speak now)")
-                audio = self.recognizer.listen(source, timeout=8, phrase_time_limit=8)
-                print("🔄 Processing your command...")
-                try:
-                    text = self.recognizer.recognize_google(audio)
-                    print(f"🎤 You said: {text}")
-                    return text
-                except sr.UnknownValueError:
-                    self.speak("Sorry, I couldn't understand that. Please try again.")
-                    print("❌ Sorry, I couldn't understand that.")
-                    return None
-                except sr.RequestError as e:
-                    self.speak("Could not process your request. Please check your internet connection.")
-                    print(f"❌ Could not request results; {e}")
-                    return None
+            # Suppress audio system messages
+            from contextlib import redirect_stderr
+            from io import StringIO
+            
+            stderr_capture = StringIO()
+            with redirect_stderr(stderr_capture):
+                with self.microphone as source:
+                    self.speak_quiet("Listening...")
+                    print("\n👂 Listening... (speak now)")
+                    audio = self.recognizer.listen(source, timeout=8, phrase_time_limit=8)
+                    print("🔄 Processing your command...")
+                    try:
+                        text = self.recognizer.recognize_google(audio)
+                        print(f"🎤 You said: {text}")
+                        return text
+                    except sr.UnknownValueError:
+                        self.speak("Sorry, I couldn't understand that. Please try again.")
+                        print("❌ Sorry, I couldn't understand that.")
+                        return None
+                    except sr.RequestError as e:
+                        self.speak("Could not process your request. Please check your internet connection.")
+                        print(f"❌ Could not request results; {e}")
+                        return None
         except Exception as e:
             print(f"❌ Error listening: {e}")
             return None
