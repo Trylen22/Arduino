@@ -1,22 +1,14 @@
 #!/usr/bin/env python3
 """
-IRIS Student Companion AI - Real Use Case Demo
-=============================================
+Silent IRIS Demo - No Verbose Output
+====================================
 
-Focused demo showcasing:
-1. Continuous environmental monitoring
-2. Proactive alerts when conditions are bad
-3. Autonomous actions to solve problems
-4. Natural conversation interface
-
-Author: [Your Name]
-Date: [2025-01-27]
+Runs the IRIS demo with ALL verbose output completely suppressed.
 """
 
-import sys
 import os
+import sys
 import time
-import threading
 import random
 from datetime import datetime
 
@@ -32,7 +24,7 @@ os.environ['PULSE_VERBOSE'] = '0'
 os.environ['JACK_VERBOSE'] = '0'
 os.environ['SPEECH_RECOGNITION_VERBOSE'] = '0'
 
-# Redirect ALL output to suppress everything during initialization
+# Redirect ALL output to suppress everything
 import io
 original_stdout = sys.stdout
 original_stderr = sys.stderr
@@ -44,8 +36,8 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'agents', 'examples'))
 sys.path.append(os.path.join(os.path.dirname(__file__), 'agents', 'core'))
 sys.path.append(os.path.join(os.path.dirname(__file__), 'agents', 'interfaces'))
 
-class DemoSimulator:
-    """Simulates realistic environmental conditions for demo."""
+class SilentDemoSimulator:
+    """Silent simulator for demo."""
     
     def __init__(self):
         self.base_conditions = {
@@ -55,12 +47,9 @@ class DemoSimulator:
             'led': 'OFF',
             'fan': 'OFF'
         }
-        self.alert_triggers = []
-        self.monitoring_active = False
     
     def get_simulated_status(self):
-        """Return realistic simulated sensor data with natural variations."""
-        # Add realistic noise to base values
+        """Return realistic simulated sensor data."""
         temp = self.base_conditions['temperature'] + random.uniform(-1, 1)
         co2 = self.base_conditions['co2'] + random.uniform(-20, 20)
         light = self.base_conditions['light'] + random.uniform(-50, 50)
@@ -108,106 +97,41 @@ class DemoSimulator:
         """Simulate taking an action."""
         if action == "turn_on_fan":
             self.base_conditions['fan'] = 'ON'
-            self.base_conditions['temperature'] = 75  # Simulate cooling
+            self.base_conditions['temperature'] = 75
         elif action == "turn_on_led":
             self.base_conditions['led'] = 'ON'
-            self.base_conditions['light'] = 800  # Simulate better lighting
+            self.base_conditions['light'] = 800
         elif action == "turn_off_fan":
             self.base_conditions['fan'] = 'OFF'
         elif action == "turn_off_led":
             self.base_conditions['led'] = 'OFF'
             self.base_conditions['light'] = 600
 
-class IRISDemo:
-    """Real use case demo for IRIS Student Companion."""
+class SilentIRISDemo:
+    """Completely silent IRIS demo."""
     
     def __init__(self):
-        self.simulator = DemoSimulator()
+        self.simulator = SilentDemoSimulator()
         self.monitoring_active = False
-        self.iris = None
         self.alert_history = []
-        self.voice_system = None
-        
-        # Try to initialize real system with voice
-        self._initialize_system()
-    
-    def _initialize_system(self):
-        """Initialize the IRIS system with voice but suppress initialization messages."""
-        try:
-            # Keep output suppressed during initialization
-            from student_companion_ai import IRISStudentCompanionAI
-            self.iris = IRISStudentCompanionAI()
-            
-            if self.iris.agent.connected:
-                # Restore output for normal operation
-                sys.stdout = original_stdout
-                sys.stderr = original_stderr
-                print("Connected to real Arduino system!")
-                self.use_real_system = True
-            else:
-                # Restore output for normal operation
-                sys.stdout = original_stdout
-                sys.stderr = original_stderr
-                print("Arduino not connected - using simulation mode")
-                self.use_real_system = False
-                
-        except Exception as e:
-            # Restore output for normal operation
-            sys.stdout = original_stdout
-            sys.stderr = original_stderr
-            print(f"System initialization failed: {e}")
-            print("Using simulation mode for demo")
-            self.use_real_system = False
+        self.use_real_system = False  # Always use simulation for silent demo
     
     def get_current_status(self):
         """Get current environmental status."""
-        if self.use_real_system and self.iris:
-            return self.iris.agent.get_status()
-        else:
-            return self.simulator.get_simulated_status()
+        return self.simulator.get_simulated_status()
     
     def take_action(self, action):
         """Take an environmental action."""
-        if self.use_real_system and self.iris:
-            if action == "turn_on_fan":
-                return self.iris.agent.turn_fan_on()
-            elif action == "turn_off_fan":
-                return self.iris.agent.turn_fan_off()
-            elif action == "turn_on_led":
-                return self.iris.agent.turn_led_on()
-            elif action == "turn_off_led":
-                return self.iris.agent.turn_led_off()
-        else:
-            self.simulator.take_action(action)
-            return True
+        self.simulator.take_action(action)
+        return True
     
     def speak(self, message):
-        """Speak a message with voice if available."""
-        if self.use_real_system and self.iris:
-            # Suppress output during speech
-            import io
-            original_stdout_temp = sys.stdout
-            original_stderr_temp = sys.stderr
-            sys.stdout = io.StringIO()
-            sys.stderr = io.StringIO()
-            
-            try:
-                # Use real voice system
-                self.iris.voice.speak(message)
-            finally:
-                # Restore output
-                sys.stdout = original_stdout_temp
-                sys.stderr = original_stderr_temp
-        else:
-            # Fallback to text
-            print(f"IRIS: {message}")
+        """Silent speak - just print."""
+        print(f"IRIS: {message}")
     
     def chat(self, user_input):
         """Process user chat input."""
-        if self.use_real_system and self.iris:
-            return self.iris.process_student_input(user_input)
-        else:
-            return self._simulate_chat_response(user_input)
+        return self._simulate_chat_response(user_input)
     
     def _simulate_chat_response(self, user_input):
         """Simulate chat responses for demo."""
@@ -420,7 +344,7 @@ class IRISDemo:
     
     def run_main_demo(self):
         """Run the main demo with all features."""
-        print("IRIS Student Companion AI - Real Use Case Demo")
+        print("IRIS Student Companion AI - Silent Demo")
         print("=" * 60)
         print("This demo showcases the real value of IRIS:")
         print("1. Continuous environmental monitoring")
@@ -493,10 +417,14 @@ class IRISDemo:
 def main():
     """Main demo function."""
     try:
-        demo = IRISDemo()
+        # Restore stdout for demo output
+        sys.stdout = original_stdout
+        sys.stderr = original_stderr
+        
+        demo = SilentIRISDemo()
         demo.run_main_demo()
     finally:
-        # Ensure output is restored
+        # Restore original output
         sys.stdout = original_stdout
         sys.stderr = original_stderr
 
