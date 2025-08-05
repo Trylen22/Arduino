@@ -1,12 +1,19 @@
+#!/usr/bin/env python3
 """
-IRIS Environmental AI - Core Agents
-=================================
+Core Agents Module
+=================
 
-Core agent components for environmental monitoring.
+Core components for the IRIS Environmental AI system.
 """
 
 from .environmental_agent import EnvironmentalAgent
 from .smart_monitor import SmartMonitor
 from .message_generators import MessageGenerators
+from .student_companion import StudentCompanion
 
-__all__ = ['EnvironmentalAgent', 'SmartMonitor', 'MessageGenerators']
+__all__ = [
+    'EnvironmentalAgent',
+    'SmartMonitor', 
+    'MessageGenerators',
+    'StudentCompanion'
+]

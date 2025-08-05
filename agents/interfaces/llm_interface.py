@@ -5,6 +5,7 @@ LLM Interface Module
 
 Modular LLM interface for querying local models and parsing responses.
 Can be imported and used by other agents.
+Now includes student companion personality for emotional support.
 
 Author: [Your Name]
 Date: [2025-01-27]
@@ -19,6 +20,19 @@ class LLMInterface:
     def __init__(self, model_name="llama3.1:8b-instruct-q4_0"):
         """Initialize LLM interface with specified model."""
         self.model_name = model_name
+        
+        # Student companion personality
+        self.student_personality = """
+        You are IRIS, a friendly AI study companion for students. You:
+        - Monitor the study environment (temperature, air quality, lighting)
+        - Provide emotional support and encouragement
+        - Help students maintain healthy study habits
+        - Are empathetic, encouraging, and slightly playful
+        - Give practical advice about study breaks and environment
+        - Use emojis occasionally to be friendly
+        - Respond like a caring study buddy, not a robot
+        - Focus on both environmental comfort AND emotional wellbeing
+        """
     
     def query_llm(self, prompt: str) -> Optional[Dict[str, Any]]:
         """Query the local LLM using Ollama."""
@@ -56,6 +70,94 @@ class LLMInterface:
         except Exception as e:
             print(f"Error querying LLM: {e}")
             return self._create_fallback_response(prompt)
+    
+    def query_student_companion(self, user_input: str, context: Dict[str, Any]) -> str:
+        """Query LLM with student companion personality."""
+        study_time = context.get('study_time_minutes', 0)
+        mood = context.get('mood', 'neutral')
+        stress_level = context.get('stress_level', 0)
+        environment = context.get('environment', {})
+        
+        # Create student-focused prompt
+        prompt = f"""
+        {self.student_personality}
+        
+        Student Context:
+        - Study time: {study_time} minutes
+        - Mood: {mood}
+        - Stress level: {stress_level}/10
+        - Environment: Temperature {environment.get('temperature', 'N/A')}°F, CO2 {environment.get('co2', 'N/A')}, Light {environment.get('brightness', 'N/A')}
+        
+        Student says: "{user_input}"
+        
+        Respond as IRIS, the caring study companion. Be empathetic, encouraging, and helpful. 
+        Consider both their emotional state and the study environment. Keep responses conversational and supportive.
+        """
+        
+        try:
+            cmd = [
+                'ollama', 'run', self.model_name,
+                prompt
+            ]
+            
+            result = subprocess.run(
+                cmd,
+                capture_output=True,
+                text=True,
+                timeout=30
+            )
+            
+            if result.returncode == 0:
+                response = result.stdout.strip()
+                # Clean up the response
+                response = self._clean_student_response(response)
+                return response
+            else:
+                return self._create_student_fallback_response(user_input, context)
+                
+        except Exception as e:
+            print(f"Student companion query failed: {e}")
+            return self._create_student_fallback_response(user_input, context)
+    
+    def _clean_student_response(self, response: str) -> str:
+        """Clean up the student companion response."""
+        # Remove any system prefixes
+        if "IRIS:" in response:
+            response = response.split("IRIS:", 1)[-1]
+        elif "Assistant:" in response:
+            response = response.split("Assistant:", 1)[-1]
+        
+        # Remove quotes if present
+        response = response.strip().strip('"').strip("'")
+        
+        # Limit length
+        if len(response) > 300:
+            response = response[:297] + "..."
+        
+        return response
+    
+    def _create_student_fallback_response(self, user_input: str, context: Dict[str, Any]) -> str:
+        """Create fallback response for student companion."""
+        input_lower = user_input.lower()
+        
+        # Simple keyword-based responses
+        if any(word in input_lower for word in ["stressed", "worried", "anxious"]):
+            return "I can sense you're feeling stressed. That's totally normal! Let's take a deep breath together. You've got this!"
+        
+        elif any(word in input_lower for word in ["tired", "exhausted", "burned out"]):
+            return "Your brain has been working hard! It's okay to feel tired - that means you're learning. How about a short break?"
+        
+        elif any(word in input_lower for word in ["break", "rest"]):
+            return "Great idea! Taking breaks helps your brain process what you've learned. You deserve it!"
+        
+        elif any(word in input_lower for word in ["help", "stuck", "confused"]):
+            return "I'm here to help! Sometimes talking through problems helps. What's on your mind?"
+        
+        elif any(word in input_lower for word in ["motivation", "encouragement"]):
+            return "You're doing amazing! Every minute of focused study is an investment in your future. Keep going!"
+        
+        else:
+            return "I'm here to support your study session! How can I help you today?"
     
     def _extract_json(self, text: str) -> Optional[Dict[str, Any]]:
         """Extract JSON from LLM response."""

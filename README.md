@@ -1,48 +1,45 @@
-# IRIS Environmental AI
-======================
+# IRIS Student Companion AI
+==========================
 
-A sophisticated environmental monitoring system with Arduino sensors, LLM intelligence, and modern voice interface.
+An AI study companion that combines environmental monitoring with emotional support to help students study better and feel supported.
 
 ## 🎯 Project Overview
 
-IRIS combines:
-- **Arduino sensors** (CO2, Temperature, Light, LED control, Fan control)
-- **LLM intelligence** (Ollama integration for smart decisions)
-- **Modern voice interface** (Google TTS for natural speech)
-- **Environmental analysis** (Real-time monitoring and alerts)
+IRIS is an intelligent study companion that:
 
-## 📁 Project Structure
+- **Monitors your study environment** (temperature, air quality, lighting)
+- **Provides emotional support** and encouragement during study sessions
+- **Tracks study habits** and suggests optimal break times
+- **Controls the environment** (LED lighting, fan) for better studying
+- **Offers personalized advice** based on your study patterns and mood
 
-```
-IRIS-Environmental-AI/
-├── README.md                    # This file
-├── requirements.txt             # Python dependencies
-├── setup.sh                    # IRIS setup script
-├── test_fan_integration.py     # Fan integration test
-├── agents/
-│   ├── core/
-│   │   ├── environmental_agent.py
-│   │   ├── smart_monitor.py
-│   │   └── message_generators.py
-│   ├── interfaces/
-│   │   ├── llm_interface.py
-│   │   └── modern_voice_interface.py
-│   └── examples/
-│       ├── smart_environmental_ai.py    # Main IRIS system
-│       └── voice_environmental_agent_modern_refactored.py
-├── arduino/
-│   ├── environmental_monitor_combined.ino
-│   └── simple_tests/
-├── docs/
-│   └── IRIS_DEMO_GUIDE.md
-└── tools/
-    └── voice_selector.py
-```
+## 🎓 Student-Focused Features
 
-## 🚀 Quick Start
+### **Emotional Support**
+- Detects stress and provides calming responses
+- Offers encouragement and motivation
+- Helps with study-related anxiety
+- Celebrates achievements and progress
+
+### **Study Assistance**
+- Tracks study session duration
+- Recommends optimal break times
+- Provides study advice and tips
+- Monitors environmental comfort
+
+### **Environmental Intelligence**
+- Monitors temperature, CO2, and lighting
+- Automatically adjusts environment for optimal studying
+- Provides environmental recommendations
+- Ensures comfortable study conditions
+
+## 🚀 Quick Start for Presentation
 
 ### 1. Setup Environment
 ```bash
+# Navigate to the project directory
+cd Arduino_Agent
+
 # Activate virtual environment
 source tts_env/bin/activate
 
@@ -56,112 +53,163 @@ pip install -r requirements.txt
 # File: arduino/environmental_monitor_combined.ino
 ```
 
-### 3. Test Fan Integration (Optional)
+### 3. Run the Demo
 ```bash
-# Test fan control functionality
-python test_fan_integration.py
+# Run the presentation demo
+python demo_student_companion.py
+
+# Or run the main student companion
+python agents/examples/student_companion_ai.py
 ```
 
-### 4. Run IRIS System
+## 🎤 Presentation Demo Commands
+
+### **Automated Demo**
 ```bash
-# Run the main IRIS system
-python agents/examples/smart_environmental_ai.py
+python demo_student_companion.py
+# Choose option 1 for automated presentation demo
 ```
+
+### **Interactive Demo**
+```bash
+python demo_student_companion.py
+# Choose option 2 for interactive demo
+```
+
+### **Natural Conversation Examples**
+- "I'm stressed about my exam tomorrow"
+- "I've been studying for 2 hours, should I take a break?"
+- "The room feels stuffy, can you help?"
+- "I need some motivation"
+- "start session" - Begin studying
+- "end session" - Finish studying
+
+## 📁 Project Structure
+
+```
+Arduino_Agent/
+├── README.md                           # This file
+├── demo_student_companion.py           # Presentation demo script
+├── requirements.txt                    # Python dependencies
+├── agents/
+│   ├── core/
+│   │   ├── environmental_agent.py     # Arduino communication
+│   │   ├── smart_monitor.py           # Environmental monitoring
+│   │   ├── message_generators.py      # Student-focused messages
+│   │   └── student_companion.py       # Student companion logic
+│   ├── interfaces/
+│   │   ├── llm_interface.py           # AI personality and responses
+│   │   └── modern_voice_interface.py  # Voice interaction
+│   └── examples/
+│       └── student_companion_ai.py    # Main student companion system
+├── arduino/
+│   └── environmental_monitor_combined.ino
+└── tools/
+    └── voice_selector.py
+```
+
+## 🎯 Key Features for Students
+
+### **Environmental Monitoring**
+- **Temperature monitoring** - Ensures comfortable study conditions
+- **CO2 monitoring** - Maintains good air quality for focus
+- **Light monitoring** - Optimizes lighting for eye comfort
+- **Automatic control** - LED and fan control for comfort
+
+### **Emotional Intelligence**
+- **Mood detection** - Recognizes stress, frustration, excitement
+- **Personalized responses** - Tailored support based on emotional state
+- **Stress management** - Breathing exercises and calming techniques
+- **Motivation** - Encouragement and celebration of progress
+
+### **Study Habit Coaching**
+- **Session tracking** - Monitors study time and breaks
+- **Break reminders** - Suggests optimal break times
+- **Progress celebration** - Acknowledges achievements
+- **Study advice** - Personalized tips and strategies
 
 ## 🎤 Voice Commands
 
-Try these voice commands:
-- "What's the temperature?"
-- "Turn on the LED"
-- "Turn off the LED"
-- "Turn on the fan"
-- "Turn off the fan"
-- "What's the environmental status?"
-- "Analyze the environment"
-- "How's the air quality?"
+### **Study Session Commands**
+- "start session" - Begin a study session
+- "end session" - End current study session
+- "take break" - Take a study break
+- "stats" - Get study statistics
+
+### **Support Commands**
+- "support" - Get emotional support
+- "advice" - Get study advice
+- "environment" - Get environmental help
+- "analyze" - Full environmental and student analysis
+
+### **Environmental Commands**
+- "status" - Check environmental status
+- "turn on LED" - Improve lighting
+- "turn on fan" - Improve air circulation
 
 ## 🔧 System Features
 
-### **Sensors & Actuators**
-- **CO2 Sensor (MQ-135)** - Air quality monitoring
-- **Thermistor** - Temperature measurement (calibrated)
-- **Photoresistor** - Light level detection
-- **LED** - Visual indicator and control
-- **Fan** - Temperature control and cooling
+### **Hardware Integration**
+- **Arduino sensors** (CO2, Temperature, Light, LED control, Fan control)
+- **Real-time monitoring** - Continuous environmental assessment
+- **Automatic control** - Smart environment adjustments
 
-### **Intelligence**
-- **LLM Integration** - Ollama with llama3.1:8b-instruct-q4_0
-- **Smart Analysis** - Environmental condition assessment
-- **Voice Interface** - Google TTS for natural speech
-- **Command Processing** - Natural language understanding
-- **Automatic Control** - Smart LED and fan control based on conditions
+### **AI Intelligence**
+- **LLM integration** - Ollama with student-focused personality
+- **Emotional analysis** - Mood and stress level detection
+- **Contextual responses** - Environment + emotional state awareness
+- **Proactive interventions** - Automatic suggestions for better studying
 
-## 📊 Environmental Analysis
+### **Voice Interface**
+- **Natural conversation** - Talk to IRIS like a study buddy
+- **High-quality TTS** - Google TTS for natural speech
+- **Emotional voice** - Supportive and encouraging tone
 
-The system provides:
-- **Temperature analysis** - Comfort level assessment
-- **CO2 monitoring** - Air quality evaluation
-- **Light level analysis** - Lighting condition assessment
-- **Smart recommendations** - LLM-powered suggestions
+## 🎓 Student Use Cases
 
-## 🛠️ Development
+### **Study Session Management**
+1. **Start session** - IRIS welcomes you and begins tracking
+2. **Environmental check** - IRIS monitors your study environment
+3. **Proactive support** - IRIS suggests improvements and breaks
+4. **Emotional support** - IRIS provides encouragement and stress relief
+5. **End session** - IRIS celebrates your progress and summarizes
 
-### **Adding New Sensors**
-1. Create Arduino test sketch in `arduino/simple_tests/`
-2. Add sensor reading to `environmental_monitor_combined.ino`
-3. Update `environmental_agent.py` to handle new sensor
-4. Test with voice commands
+### **Stress Management**
+- **Stress detection** - IRIS recognizes when you're stressed
+- **Calming responses** - Breathing exercises and encouragement
+- **Environmental adjustments** - Comfort improvements for stress relief
+- **Break suggestions** - Optimal timing for stress reduction
 
-### **Voice Improvements**
-- Use `tools/voice_selector.py` to test different voices
-- Modify `agents/interfaces/modern_voice_interface.py` for voice settings
-- Test with `tools/test_voice_quality.py`
+### **Study Optimization**
+- **Environment monitoring** - Ensures optimal study conditions
+- **Break timing** - Suggests breaks based on study duration
+- **Motivation** - Provides encouragement and celebrates progress
+- **Personalized advice** - Study tips based on your patterns
 
-## 🔄 System Architecture
+## 🚀 Future Enhancements
 
-```
-Arduino Sensors → Environmental Agent → LLM Interface → Voice Interface
-     ↓                    ↓                    ↓              ↓
-  Raw Data → Processed Data → Intelligent Analysis → Voice Response
-```
+### **Advanced Features**
+- **Study goal tracking** - Set and monitor academic goals
+- **Progress analytics** - Detailed study session insights
+- **Social features** - Study group coordination
+- **Integration** - Calendar and task management
 
-## 📈 Future Improvements
-
-See `docs/system_improvements.md` for detailed improvement roadmap:
-- **Hardware expansion** (humidity, air quality sensors)
-- **AI enhancements** (predictive analytics, anomaly detection)
-- **User interface** (web dashboard, mobile app)
-- **Automation** (smart controls, scheduling)
-- **Data analytics** (logging, visualization)
-
-## 🐛 Troubleshooting
-
-### **Voice Issues**
-```bash
-# Test voice quality
-python tools/test_voice_quality.py
-
-# Select preferred voice
-python tools/set_preferred_voice.py
-```
-
-### **Arduino Connection**
-```bash
-# Check connection
-python agents/examples/smart_environmental_ai.py
-```
-
-## 📝 License
-
-This project is open source. Feel free to modify and improve!
+### **Hardware Expansion**
+- **Humidity sensor** - Complete environmental monitoring
+- **Noise monitoring** - Sound level assessment
+- **Motion detection** - Study session validation
+- **Smart lighting** - Advanced lighting control
 
 ## 🤝 Contributing
 
-1. Test your changes thoroughly
-2. Update documentation
-3. Follow the existing code structure
-4. Add voice commands for new features
+This project is designed to help students study better. Contributions that improve:
+- Student experience
+- Emotional support capabilities
+- Environmental monitoring
+- Study habit coaching
+
+Are all welcome!
 
 ---
 
-**Happy environmental monitoring! 🌍✨**
+**Happy studying with IRIS! 🎓✨**

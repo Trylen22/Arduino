@@ -5,13 +5,24 @@ Message Generators - Centralized Message Creation
 
 Provides centralized message generation for environmental monitoring system.
 Handles status messages, alerts, warnings, and user responses.
+Now includes student companion features for emotional support and study assistance.
 """
 
 from typing import Dict, Any, List
+from datetime import datetime, timedelta
 
 
 class MessageGenerators:
-    """Centralized message generation for environmental monitoring."""
+    """Centralized message generation for environmental monitoring and student support."""
+    
+    # Student companion personality traits
+    STUDENT_PERSONALITY = {
+        "encouraging": True,
+        "empathetic": True,
+        "playful": True,
+        "supportive": True,
+        "practical": True
+    }
     
     @staticmethod
     def get_status_message(status: Dict[str, Any]) -> str:
@@ -33,6 +44,123 @@ class MessageGenerators:
             light_info = f"{light_raw}"
         
         return f"I'm reading temperature {temp}°F, CO2 {co2}, light {light_info}, LED {led}."
+    
+    @staticmethod
+    def get_student_support_message(student_context: Dict[str, Any]) -> str:
+        """Generate student-focused support messages based on context."""
+        mood = student_context.get('mood', 'neutral')
+        study_time = student_context.get('study_time_minutes', 0)
+        stress_level = student_context.get('stress_level', 0)
+        environment = student_context.get('environment', {})
+        
+        messages = []
+        
+        # Emotional support based on mood
+        if mood == "stressed":
+            messages.append("I can sense you're feeling stressed. That's totally normal, especially during exams. Let's take a moment together.")
+        elif mood == "frustrated":
+            messages.append("Frustration is part of the learning process. You're growing your brain right now!")
+        elif mood == "tired":
+            messages.append("Your brain has been working hard. It's okay to feel tired - that means you're learning!")
+        
+        # Study time awareness
+        if study_time > 120:  # 2 hours
+            messages.append(f"Wow! You've been studying for {study_time} minutes. That's some serious dedication!")
+        elif study_time > 60:  # 1 hour
+            messages.append(f"You've been focused for {study_time} minutes. Great work!")
+        
+        # Environmental support
+        temp = environment.get('temperature', 0)
+        co2 = environment.get('co2', 0)
+        light = environment.get('brightness', 'Unknown')
+        
+        if temp > 80:
+            messages.append("The room is getting warm. Want me to turn on the fan to help you stay comfortable?")
+        elif temp < 65:
+            messages.append("It's a bit chilly in here. A comfortable temperature helps with focus!")
+        
+        if co2 > 1000:
+            messages.append("The air is getting stuffy. Fresh air helps your brain work better!")
+        
+        if light == "dim":
+            messages.append("The lighting is a bit dim. Good lighting reduces eye strain and helps you focus!")
+        
+        return " ".join(messages) if messages else "I'm here to support your study session!"
+    
+    @staticmethod
+    def get_study_break_message(study_time: int, stress_level: int) -> str:
+        """Generate study break recommendations."""
+        if study_time > 180:  # 3 hours
+            return "You've been studying for over 3 hours! Your brain needs a proper break. How about a 15-minute walk or some stretching?"
+        elif study_time > 90:  # 1.5 hours
+            return f"You've been focused for {study_time} minutes. Time for a 5-minute break? Stand up, stretch, maybe grab some water!"
+        elif study_time > 45:  # 45 minutes
+            return "You're in the zone! But remember, short breaks help you stay sharp. Want to take a quick stretch break?"
+        
+        return "You're just getting started! Remember to take breaks when you need them."
+    
+    @staticmethod
+    def get_stress_management_message(stress_level: int, context: str = "") -> str:
+        """Generate stress management support."""
+        if stress_level > 8:
+            return "I can tell you're really stressed. Let's take a deep breath together. Inhale for 4, hold for 4, exhale for 4. You've got this!"
+        elif stress_level > 6:
+            return "Stress is your body's way of preparing for a challenge. You're stronger than you think! Want to talk about what's on your mind?"
+        elif stress_level > 4:
+            return "A little stress is normal and can actually help you perform better. You're doing great!"
+        
+        return "You seem to be in a good headspace. Keep up the positive energy!"
+    
+    @staticmethod
+    def get_motivation_message(achievement: str = "", study_time: int = 0) -> str:
+        """Generate motivational messages."""
+        if achievement:
+            return f"{achievement}! You're making amazing progress!"
+        elif study_time > 60:
+            return f"You've been studying for {study_time} minutes. That's dedication! Your future self will thank you for this effort."
+        else:
+            return "Every minute of focused study is an investment in your future. You're building something amazing!"
+    
+    @staticmethod
+    def get_environmental_comfort_message(environment: Dict[str, Any]) -> str:
+        """Generate messages about environmental comfort for studying."""
+        temp = environment.get('temperature', 0)
+        co2 = environment.get('co2', 0)
+        light = environment.get('brightness', 'Unknown')
+        
+        comfort_messages = []
+        
+        if 68 <= temp <= 72:
+            comfort_messages.append("Perfect study temperature! Your brain loves this comfortable environment.")
+        elif temp > 75:
+            comfort_messages.append("It's getting warm in here. Comfortable temperature helps you focus better.")
+        elif temp < 65:
+            comfort_messages.append("A bit chilly! Warm up and your concentration will improve.")
+        
+        if co2 < 800:
+            comfort_messages.append("Great air quality! Fresh air keeps your mind sharp.")
+        elif co2 < 1000:
+            comfort_messages.append("The air is getting a bit stuffy. Fresh air helps with concentration!")
+        
+        if light == "bright" or light == "moderate":
+            comfort_messages.append("Good lighting! It's easier on your eyes and helps you stay alert.")
+        elif light == "dim":
+            comfort_messages.append("The lighting is a bit dim. Better lighting can help reduce eye strain.")
+        
+        return " ".join(comfort_messages) if comfort_messages else "Your study environment looks good!"
+    
+    @staticmethod
+    def get_conversation_starter() -> str:
+        """Generate conversation starters for the student companion."""
+        starters = [
+            "How's your study session going? I'm here if you need anything!",
+            "What are you working on today? I'd love to hear about it!",
+            "How are you feeling about your studies? I'm here to support you!",
+            "Need a study buddy? I'm ready to help you stay focused and motivated!",
+            "What's on your mind? Sometimes talking helps with problem-solving!"
+        ]
+        import random
+        return random.choice(starters)
     
     @staticmethod
     def get_analysis_message(status: Dict[str, Any]) -> str:
