@@ -26,6 +26,8 @@ from message_generators import MessageGenerators
 from student_companion import StudentCompanion
 from modern_voice_interface import ModernVoiceInterface
 from llm_interface import LLMInterface
+from agent_memory import AgentMemory
+from autonomous_agent import AutonomousAgent
 
 
 class IRISStudentCompanionAI:
@@ -42,9 +44,52 @@ class IRISStudentCompanionAI:
         self.messages = MessageGenerators()
         self.student_companion = StudentCompanion()
         
+        # Initialize modern AI agent components
+        self.memory = AgentMemory()
+        self.autonomous_agent = AutonomousAgent(self.memory)
+        
+        # Load existing memory if available
+        self.memory.load_memory()
+        
         # Initialize speech recognition
         self.recognizer = sr.Recognizer()
-        self.microphone = sr.Microphone(device_index=9)  # Use HyperX SoloCast
+        
+        # Auto-detect microphone instead of hardcoding
+        try:
+            # Try to find a working microphone
+            available_mics = sr.Microphone.list_microphone_names()
+            print(f"Available microphones: {available_mics}")
+            
+            # Look for HyperX SoloCast specifically
+            hyperx_index = None
+            for i, mic_name in enumerate(available_mics):
+                if "HyperX" in mic_name or "SoloCast" in mic_name:
+                    hyperx_index = i
+                    break
+            
+            if hyperx_index is not None:
+                self.microphone = sr.Microphone(device_index=hyperx_index)
+                print(f"✅ Using HyperX SoloCast: {available_mics[hyperx_index]}")
+            elif len(available_mics) > 10:
+                # Use index 10 as fallback
+                self.microphone = sr.Microphone(device_index=10)
+                print(f"✅ Using microphone: {available_mics[10]}")
+            else:
+                # Fallback to default if specific mics don't exist
+                try:
+                    self.microphone = sr.Microphone()
+                    print("✅ Using default microphone")
+                except:
+                    if available_mics:
+                        # Use the first available microphone
+                        self.microphone = sr.Microphone(device_index=0)
+                        print(f"✅ Using microphone: {available_mics[0]}")
+                    else:
+                        print("⚠️  No microphones found - voice input disabled")
+                        self.microphone = None
+        except Exception as e:
+            print(f"⚠️  Microphone setup issue: {e}")
+            self.microphone = None
         
         if not self.agent.connected:
             print("❌ Cannot initialize without Arduino connection")
@@ -73,6 +118,10 @@ class IRISStudentCompanionAI:
     
     def get_voice_input(self) -> str:
         """Get voice input from the user."""
+        if not self.microphone:
+            print("❌ No microphone available. Please use text input.")
+            return ""
+            
         try:
             # Suppress audio system messages
             import os
@@ -104,6 +153,7 @@ class IRISStudentCompanionAI:
             return ""
         except Exception as e:
             print(f"Error with voice input: {e}")
+            print("Falling back to text input...")
             return ""
     
     def get_user_input(self) -> str:
@@ -258,7 +308,7 @@ class IRISStudentCompanionAI:
         return True
     
     def process_student_input(self, user_input: str):
-        """Process student input with emotional intelligence."""
+        """Process student input with emotional intelligence and memory."""
         # Update study time
         self.student_companion.update_study_time()
         
@@ -269,30 +319,63 @@ class IRISStudentCompanionAI:
         status = self.agent.get_status()
         environment = status if "error" not in status else {}
         
-        # Generate response using LLM with student personality
+        # Create context for autonomous agent
+        context = {
+            "study_time_minutes": self.student_companion.study_time_minutes,
+            "breaks_taken": self.student_companion.current_session.get("breaks_taken", 0),
+            "mood": analysis.get("mood", "neutral"),
+            "stress_level": analysis.get("stress_level", 0),
+            "environment": environment,
+            "session_id": f"session_{int(time.time())}"
+        }
+        
+        # Check for autonomous interventions
+        autonomous_decision = self.autonomous_agent.make_autonomous_decision(context)
+        
+        # Generate response using LLM with student personality and memory
         try:
-            context = {
-                "study_time_minutes": self.student_companion.study_time_minutes,
-                "mood": analysis.get("mood", "neutral"),
-                "stress_level": analysis.get("stress_level", 0),
-                "environment": environment
+            # Include memory context
+            recent_context = self.memory.get_recent_context(30)
+            preferences = self.memory.get_student_preferences()
+            
+            enhanced_context = {
+                **context,
+                "recent_interactions": recent_context,
+                "student_preferences": preferences,
+                "memory_patterns": self.memory.get_study_patterns()
             }
             
-            response = self.llm.query_student_companion(user_input, context)
+            response = self.llm.query_student_companion(user_input, enhanced_context)
         except Exception as e:
             print(f"LLM query failed: {e}")
             # Fallback to rule-based response
             response = self.student_companion.generate_student_response(analysis, environment)
         
+        # Store interaction in memory
+        self.memory.store_interaction(user_input, response, context)
+        
         # Speak the response
         self.voice.speak(response)
         
-        # Check for proactive interventions
-        if self.student_companion.should_intervene():
-            intervention = self.student_companion.get_intervention_message(environment)
-            if intervention:
-                time.sleep(2)  # Brief pause
-                self.voice.speak(intervention)
+        # Handle autonomous intervention if needed
+        if autonomous_decision:
+            time.sleep(2)  # Brief pause
+            intervention_message = autonomous_decision.get("message", "")
+            if intervention_message:
+                self.voice.speak(intervention_message)
+                
+                # Execute autonomous actions
+                actions = autonomous_decision.get("actions", [])
+                for action in actions:
+                    if action == "turn_on_fan":
+                        self.agent.turn_fan_on()
+                    elif action == "turn_on_led":
+                        self.agent.turn_led_on()
+                    elif action == "suggest_break":
+                        self.student_companion.take_break()
+        
+        # Learn from this interaction
+        self.memory.learn_patterns()
     
     def run_interactive_mode(self):
         """Run the student companion in interactive mode."""
@@ -401,8 +484,48 @@ class IRISStudentCompanionAI:
     
     def close(self):
         """Clean up resources."""
+        # Save memory before closing
+        self.memory.save_memory()
+        
         if hasattr(self, 'agent'):
             self.agent.close()
+    
+    def demonstrate_ai_agent_features(self):
+        """Demonstrate modern AI agent capabilities."""
+        print("\n🤖 IRIS Modern AI Agent Features")
+        print("=" * 50)
+        
+        # Demonstrate memory system
+        print("📚 Memory System:")
+        preferences = self.memory.get_student_preferences()
+        patterns = self.memory.get_study_patterns()
+        print(f"  - Student preferences: {preferences}")
+        print(f"  - Learned patterns: {patterns}")
+        
+        # Demonstrate autonomous decision making
+        print("\n🧠 Autonomous Decision Making:")
+        test_context = {
+            "study_time_minutes": 95,
+            "stress_level": 8,
+            "environment": {"temperature": 78, "co2": 600, "light": 400}
+        }
+        
+        decision = self.autonomous_agent.make_autonomous_decision(test_context)
+        if decision:
+            print(f"  - Autonomous intervention: {decision['type']}")
+            print(f"  - Message: {decision['message']}")
+            print(f"  - Actions: {decision['actions']}")
+        else:
+            print("  - No intervention needed")
+        
+        # Demonstrate context analysis
+        print("\n🔍 Context Analysis:")
+        analysis = self.autonomous_agent.analyze_context(test_context)
+        print(f"  - Study health: {analysis['study_health']}")
+        print(f"  - Environmental health: {analysis['environmental_health']}")
+        print(f"  - Emotional health: {analysis['emotional_health']}")
+        
+        print("\n✅ Modern AI Agent features demonstrated!")
 
 
 def main():

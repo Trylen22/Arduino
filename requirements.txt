@@ -8,8 +8,11 @@ gTTS>=2.3.1
 pygame>=2.1.2
 edge-tts>=6.1.9
 
-# LLM integration
-subprocess.run
+# Audio processing
+pyaudio>=0.2.11
+
+# LLM integration (built-in modules)
+# subprocess is built-in, no need to install
 
 # Optional: Coqui TTS (uncomment if needed)
 # TTS>=0.13.0
